@@ -85,7 +85,7 @@ export default function Navbar() {
         li >
         <
         a href = "/BLDAHIMS/bloodbank/about.cnt" >
-        About eRaktkosh <
+        About lifeconnect <
         /a> <
         /li> <
         li >
