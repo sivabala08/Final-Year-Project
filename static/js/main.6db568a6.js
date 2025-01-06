@@ -7515,7 +7515,7 @@
         }
     }(), n.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), (() => {
         var e = {},
-            t = "e-raktkosh:";
+            t = "Life-Connect:";
         n.l = (r, a, o, l) => {
             if (e[r]) e[r].push(a);
             else {
@@ -8550,7 +8550,7 @@
                                                 children: (0, de.jsx)("a", {
                                                     className: "links",
                                                     href: "https://eraktkosh.mohfw.gov.in/eRaktkoshUtilities/#/",
-                                                    children: "e-Raktkosh Dashboard"
+                                                    children: "Life-Connect Dashboard"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
@@ -8678,7 +8678,7 @@
                                         children: (0, de.jsx)("a", {
                                             className: "nav-link",
                                             href: "https://eraktkosh.mohfw.gov.in/eRaktkoshUtilities/#/",
-                                            children: "e-Raktkosh Dashboard"
+                                            children: "Life-Connect Dashboard"
                                         })
                                     }), (0, de.jsx)("div", {
                                         className: "d-xl-flex d-lg-flex d-none",
@@ -8687,7 +8687,7 @@
                                             children: (0, de.jsx)("a", {
                                                 className: "nav-link",
                                                 href: "https://eraktkosh.mohfw.gov.in/eRaktkoshUtilities/#/",
-                                                children: "e-Raktkosh Dashboard"
+                                                children: "Life-Connect Dashboard"
                                             })
                                         })
                                     })]
@@ -8792,14 +8792,14 @@
                                     className: "about-container pb-4",
                                     children: [(0, de.jsx)("h3", {
                                         className: "section-heading text-center pt-5 pb-3",
-                                        children: "About e-Raktkosh"
+                                        children: "About Life-Connect"
                                     }), (0, de.jsxs)("div", {
                                         children: [(0, de.jsx)("p", {
                                             className: "about-text",
-                                            children: "e-Raktkosh is a platform to provide information about blood banks, blood availability, blood donation camps and assistant automation. More than 3800 blood banks are registered on e-Raktkosh from 29 states and 8 UTs."
+                                            children: "Life-Connect is a platform to provide information about blood banks, blood availability, blood donation camps and assistant automation. More than 3800 blood banks are registered on Life-Connect from 29 states and 8 UTs."
                                         }), (0, de.jsx)("p", {
                                             className: "about-text",
-                                            children: "e-Raktkosh is a citizen centric portal and mobile app for various services such as nearest blood bank, blood availability & blood donation camps information. It enforces blood banks to strictly follow national blood policy standards and guidelines."
+                                            children: "Life-Connect is a citizen centric portal and mobile app for various services such as nearest blood bank, blood availability & blood donation camps information. It enforces blood banks to strictly follow national blood policy standards and guidelines."
                                         })]
                                     }), (0, de.jsxs)("button", {
                                         className: "btn readBtn",
@@ -8956,7 +8956,7 @@
                                     children: [(0, de.jsx)("a", {
                                         href: "/eRaktKosh/hissso/loginLogin",
                                         className: "footer-details mb-2",
-                                        children: "e-Raktkosh Login"
+                                        children: "Life-Connect Login"
                                     }), (0, de.jsx)("a", {
                                         href: "/BLDAHIMS/bloodbank/bbOnboard.cnt?hmode=GETONBOARDFORMESSENTIAL",
                                         className: "footer-details mb-2",
@@ -8973,7 +8973,7 @@
                                     children: [(0, de.jsx)("a", {
                                         href: "/BLDAHIMS/bloodbank/about.cnt",
                                         className: "footer-details mb-2",
-                                        children: "About e-Raktkosh"
+                                        children: "About Life-Connect"
                                     }), (0, de.jsx)("a", {
                                         href: "/BLDAHIMS/bloodbank/notification.cnt",
                                         className: "footer-details mb-2",
@@ -8981,7 +8981,7 @@
                                     }), (0, de.jsx)("a", {
                                         href: "/BLDAHIMS/bloodbank/eraktkoshfaq.cnt",
                                         className: "footer-details mb-2",
-                                        children: "e-Raktkosh FAQs"
+                                        children: "Life-Connect FAQs"
                                     }), (0, de.jsxs)("a", {
                                         href: "/BLDAHIMS/bloodbank/transactions/bbpublicindexGallery.html",
                                         className: "footer-details mb-2",
@@ -9004,7 +9004,7 @@
                                 className: "col-12 col-md-6 col-xl-2 mb-3",
                                 children: [(0, de.jsx)("h5", {
                                     className: "heading",
-                                    children: "Download e-raktkosh App"
+                                    children: "Download Life-Connect App"
                                 }), (0, de.jsx)("img", {
                                     className: "mb-0 mb-xl-1 me-2 me-xl-0",
                                     src: "assets/images/apple-store.png"
