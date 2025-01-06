@@ -50,7 +50,7 @@ function App() {
         { /* service section */ } <
         Service / >
 
-        { /* about e-raktkosh */ } <
+        { /* about Life-Connect */ } <
         Aboutpage / >
 
         { /* learning donation */ } <

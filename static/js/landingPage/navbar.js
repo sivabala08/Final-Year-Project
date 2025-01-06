@@ -85,14 +85,14 @@ export default function Navbar() {
         li >
         <
         a href = "/BLDAHIMS/bloodbank/about.cnt" >
-        About eRaktkosh <
+        About lifeconnect <
         /a> <
         /li> <
         li >
         <
         a className = "links"
         href = "https://eraktkosh.mohfw.gov.in/eRaktkoshUtilities/#/" >
-        e - Raktkosh Dashboard <
+        Life-Connect Dashboard <
         /a> <
         /li> <
         li >
@@ -104,7 +104,7 @@ export default function Navbar() {
         li >
         <
         a href = "/BLDAHIMS/bloodbank/eraktkoshfaq.cnt" >
-        eRaktkosh FAQs <
+        lifeconnect FAQs <
         /a> <
         /li> <
         li >
