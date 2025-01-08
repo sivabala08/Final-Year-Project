@@ -8544,7 +8544,7 @@
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
                                                     href: "/BLDAHIMS/bloodbank/about.cnt",
-                                                    children: "About eRaktkosh"
+                                                    children: "About LifeConnect"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
@@ -8560,7 +8560,7 @@
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
                                                     href: "/BLDAHIMS/bloodbank/eraktkoshfaq.cnt",
-                                                    children: "eRaktkosh FAQs"
+                                                    children: "LifeConnect FAQs"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
@@ -8663,7 +8663,7 @@
                                                 children: (0, de.jsx)("a", {
                                                     className: "links",
                                                     href: "/eRaktKosh/hissso/loginLogin",
-                                                    children: "eRaktkosh Login"
+                                                    children: "LifeConnect Login"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
