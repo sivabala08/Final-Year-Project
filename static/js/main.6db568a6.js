@@ -9202,7 +9202,7 @@
                                         alt: "First Image"
                                     })
                                 }), (0, de.jsx)("div", {
-                                    className: "carousel-image carousel-image-right",
+                                    className: "carousel-image carousel-image-rightc",
                                     children: (0, de.jsx)("img", {
                                         src: "assets/gif/heroComponent1.gif",
                                         className: "d-block w-100",
