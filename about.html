@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="eRaktKosh: A Centralized Blood Bank Management System">
+    <meta name="author" content="Ministry of Health and Family Welfare">
+    <title>About eRaktKosh</title>
+    <link rel="stylesheet" href="../hisglobal/bbpublic/assets/elements/css/bootstrap.css">
+    <link rel="stylesheet" href="../hisglobal/bbpublic/assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../hisglobal/bbpublic/assets/elements/css/combined.css">
+    <link rel="stylesheet" href="../bloodbank/transactions/assets/css/combined-cleaned.css">
+    <link rel="stylesheet" href="../hisglobal/bbpublic/assets/custom/bbpublic.css">
+    <style>
+        h4 { color: #A94442; }
+        .darkbg1 { background-color: #c0c0c0; color: #81181d; }
+        .text { background-color: yellow; padding: 20px; display: none; }
+        .picture:hover .text { display: block; }
+    </style>
+    <script src="/HIS/hisglobal/js/jquery/updated_jquery/jquery_3.6/jquery.min.js"></script>
+    <script src="../hisglobal/bbpublic/assets/elements/js/wow.js"></script>
+</head>
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="auto-container clearfix">
+            <div class="logo"><a href="transactions/bbpublicindex.html">
+                <img src="../hisglobal/bbpublic/images/Rakt5.png" alt="eRaktkosh" title="eRaktkosh"></a>
+            </div>
+            <nav class="main-menu">
+                <ul class="navigation">
+                    <li class="dropdown current"><a href="#">About Us</a>
+                        <ul class="submenu">
+                            <li><a href="/BLDAHIMS/bloodbank/about.html">About eRaktKosh</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#">Looking for Blood</a>
+                        <ul class="submenu">
+                            <li><a href="/BLDAHIMS/bloodbank/stockAvailability.html">Blood Availability</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Body Content -->
+    <div class="container wrapper">
+        <div class="page-header">
+            <h3 class="text-danger"><b>About eRaktKosh</b></h3>
+        </div>
+        <div class="jumbotron">
+            <h2>e-RaktKosh: A Centralized Blood Bank Management System</h2>
+        </div>
+        <div class="row">
+            <p><b>eRaktKosh was inaugurated on 7th April 2016 by Hon'ble Minister of Health and Family Welfare, Sh. J P Nadda.</b></p>
+            <p>e-Rakt Kosh enforces standards for proper collection, donation, and monitoring of blood quality and quantity.</p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-lower">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-md-6 text-center">© 2016 - <span id="copyYear"></span> by Ministry of Health and Family Welfare</div>
+                    <div class="col-md-6 text-center">Designed by CDAC</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('copyYear').innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

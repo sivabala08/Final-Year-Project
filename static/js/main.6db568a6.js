@@ -8543,7 +8543,7 @@
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
-                                                    href: "/BLDAHIMS/bloodbank/about.cnt",
+                                                    href: "about.html",
                                                     children: "About LifeConnect"
                                                 })
                                             }), (0, de.jsx)("li", {
