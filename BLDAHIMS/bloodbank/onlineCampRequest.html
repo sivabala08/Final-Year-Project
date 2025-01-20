@@ -1,0 +1,545 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+
+
+
+<html>
+
+<!-- Mirrored from eraktkosh.mohfw.gov.in/BLDAHIMS/bloodbank/onlineCampRequest.cnt by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jan 2025 07:04:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>e-RaktKosh Portal Donor Login</title>
+<!-- CSS includes -->
+<!--JQuery -->
+<script src="transactions/portalCamp/media/jquery/3.4.1/jquery-3.4.1.min.js"
+	type="text/javascript"></script>
+
+<!--Propper JS -->
+<!-- <script src="/BLDAHIMS/bloodbank/transactions/portalCamp/media/popper.js/1.16.0/umd/popper.min.js"></script> -->
+<script src="transactions/portalCamp/media/popper.js/2.0.6/umd/popper.min.js"></script>
+
+<!--Tooltip JS -->
+<!-- <script src="/BLDAHIMS/bloodbank/transactions/portalCamp/media/tooltip.js/1.3.2/umd/tooltip.min.js"></script> -->
+
+
+<!--JQueryUI -->
+<script src="transactions/portalCamp/media/jquery-ui/1.12.1/jquery-ui.min.js"
+	type="text/javascript"></script>
+<link href="transactions/portalCamp/media/jquery-ui/1.12.1/jquery-ui.min.css" rel="stylesheet"
+	type="text/css" />
+<script
+	src="transactions/portalCamp/media/jquery-ui/1.12.1/jquery.ui.datepicker.validation.min.js"
+	type="text/javascript"></script>
+<script src="transactions/portalCamp/media/jquery-ui/1.12.1/jquery.validate.min.js"
+	type="text/javascript"></script>
+
+<!--Bootstrap -->
+<link href="transactions/portalCamp/media/bootstrap/bootstrap-4.3.1/css/bootstrap.min.css"
+	rel="stylesheet" type="text/css" />
+<!-- <link href="/BLDAHIMS/bloodbank/transactions/portalCamp/media/bootstrap/bootstrap-themes/css/litera/bootstrap.min.css" rel="stylesheet" type="text/css" />  -->
+<!-- <link href="/BLDAHIMS/bloodbank/transactions/portalCamp/media/bootstrap/bootstrap-themes/css/slate/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+<!-- <link href="/BLDAHIMS/bloodbank/transactions/portalCamp/media/bootstrap/bootstrap-themes/css/material/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+<script src="transactions/portalCamp/media/bootstrap/bootstrap-4.3.1/js/bootstrap.min.js"
+	type="text/javascript"></script>
+
+
+<!--Bootstrap Datables -->
+<link
+	href="transactions/portalCamp/media/dataTables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"
+	rel="stylesheet" type="text/css" />
+<script
+	src="transactions/portalCamp/media/dataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"
+	type="text/javascript"></script>
+<script
+	src="transactions/portalCamp/media/dataTables/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"
+	type="text/javascript"></script>
+
+
+<!--Bootstrap Datatables Buttons -->
+<link
+	href="transactions/portalCamp/media/dataTables/Buttons-1.5.6/css/buttons.bootstrap4.min.css"
+	rel="stylesheet" type="text/css" />
+<script
+	src="transactions/portalCamp/media/dataTables/Buttons-1.5.6/js/dataTables.buttons.min.js"
+	type="text/javascript"></script>
+<script
+	src="transactions/portalCamp/media/dataTables/Buttons-1.5.6/js/buttons.bootstrap4.min.js"
+	type="text/javascript"></script>
+
+<script src="transactions/portalCamp/media/dataTables/Buttons-1.5.6/js/buttons.colVis.min.js"
+	type="text/javascript"></script>
+<script src="transactions/portalCamp/media/dataTables/Buttons-1.5.6/js/buttons.flash.min.js"
+	type="text/javascript"></script>
+<script src="transactions/portalCamp/media/dataTables/Buttons-1.5.6/js/buttons.html5.min.js"
+	type="text/javascript"></script>
+<script src="transactions/portalCamp/media/dataTables/Buttons-1.5.6/js/buttons.print.min.js"
+	type="text/javascript"></script>
+
+
+<!--Excel HTML5 export button -->
+<script src="transactions/portalCamp/media/dataTables/JSZip-2.5.0/jszip.min.js"
+	type="text/javascript"></script>
+
+<!--PDF HTML5 export button -->
+<script src="transactions/portalCamp/media/dataTables/pdfmake-0.1.36/pdfmake.min.js"
+	type="text/javascript"></script>
+<script src="transactions/portalCamp/media/dataTables/pdfmake-0.1.36/vfs_fonts.js"
+	type="text/javascript"></script>
+
+
+<!--Bootstrap Datables FixedHeader -->
+<link
+	href="transactions/portalCamp/media/dataTables/FixedHeader-3.1.4/css/fixedHeader.bootstrap4.min.css"
+	rel="stylesheet" type="text/css" />
+<script
+	src="transactions/portalCamp/media/dataTables/FixedHeader-3.1.4/js/dataTables.fixedHeader.min.js"
+	type="text/javascript"></script>
+<script
+	src="transactions/portalCamp/media/dataTables/FixedHeader-3.1.4/js/fixedHeader.bootstrap4.min.js"
+	type="text/javascript"></script>
+<!--not ness-->
+
+
+<!--Bootstrap Datables RowGroup -->
+<link
+	href="transactions/portalCamp/media/dataTables/RowGroup-1.1.0/css/rowGroup.bootstrap4.min.css"
+	rel="stylesheet" type="text/css" />
+<script
+	src="transactions/portalCamp/media/dataTables/RowGroup-1.1.0/js/dataTables.rowGroup.min.js"
+	type="text/javascript"></script>
+<script
+	src="transactions/portalCamp/media/dataTables/RowGroup-1.1.0/js/rowGroup.bootstrap4.min.js"
+	type="text/javascript"></script>
+<!--not ness-->
+
+
+<!--Bootstrap Datables Responsive -->
+<link
+	href="transactions/portalCamp/media/dataTables/Responsive-2.2.2/css/responsive.bootstrap4.min.css"
+	rel="stylesheet" type="text/css" />
+<script
+	src="transactions/portalCamp/media/dataTables/Responsive-2.2.2/js/dataTables.responsive.min.js"
+	type="text/javascript"></script>
+<script
+	src="transactions/portalCamp/media/dataTables/Responsive-2.2.2/js/responsive.bootstrap4.min.js"
+	type="text/javascript"></script>
+
+<!--Bootstrap Select -->
+<link href="transactions/portalCamp/media/dataTables/select/1.3.1/css/select.bootstrap.min.css"
+	rel="stylesheet" type="text/css" />
+<script src="transactions/portalCamp/media/dataTables/select/1.3.1/js/select.bootstrap4.min.js"
+	type="text/javascript"></script>
+<!-- <link href="/BLDAHIMS/bloodbank/transactions/portalCamp/media/dataTables/select/1.3.1/css/select.dataTables.min.css" rel="stylesheet" type="text/css" /> -->
+<script src="transactions/portalCamp/media/dataTables/select/1.3.1/js/dataTables.select.min.js"
+	type="text/javascript"></script>
+
+
+<!-- Datables api->processing -->
+<script type="text/javascript"
+	src="transactions/portalCamp/media/dataTables/api/processing().js"></script>
+
+<!--Fontawesome Icons---->
+<link rel="stylesheet" href="transactions/portalCamp/media/fontawesome/5.10.1/css/all.css" />
+<script src="../../../kit.fontawesome.com/28cd952d7c.js" crossorigin="anonymous"></script>
+
+
+<!---For Bootstrap 3 moment.js dattimepicker---->
+<!-- <link rel="stylesheet" href="/BLDAHIMS/bloodbank/transactions/portalCamp/media/bootstrap/bootstrap-3.3.7/css/bootstrap.min.css" /> -->
+<script type="text/javascript" src="transactions/portalCamp/media/moment-js/moment.js"></script>
+<script type="text/javascript"
+	src="transactions/portalCamp/media/bootstrap/bootstrapDateTime/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet"
+	href="transactions/portalCamp/media/bootstrap/bootstrapDateTime/css/bootstrap-datetimepicker.min.css" />
+
+<!---Datatables Date sorting plugin----->
+<!-- <script type="text/javascript" src="/BLDAHIMS/bloodbank/transactions/portalCamp/media/misc/moment.min.js"></script> -->
+<script type="text/javascript" src="transactions/portalCamp/media/moment-js/datetime-moment.js"></script>
+
+
+<!--Vue JS -->
+<script src="transactions/portalCamp/media/vue-js/vue.min.js" type="text/javascript"></script>
+<script src="transactions/portalCamp/media/vue-js/vuex.js" type="text/javascript"></script>
+<script src="transactions/portalCamp/media/vue-js/portal-vue.umd.min.js" type="text/javascript"></script>
+<link rel="stylesheet"
+	href="transactions/portalCamp/media/vue-js/bootstrap-vue/bootstrap-vue.min.css" />
+
+<!--highchart JS -->
+<script src="transactions/portalCamp/media/highcharts/7.2.0/highcharts.js"></script>
+<script src="transactions/portalCamp/media/highcharts/7.2.0/modules/exporting.js"></script>
+<script src="transactions/portalCamp/media/highcharts/7.2.0/modules/export-data.js"></script>
+
+<!--Tippy JS----->
+<script type="text/javascript"
+	src="transactions/portalCamp/media/tippy/6.0.0/dist/tippy-bundle.umd.min.js"></script>
+<link href="transactions/portalCamp/media/tippy/6.0.0/animations/perspective-extreme.css"
+	rel="stylesheet" type="text/css" />
+<link href="transactions/portalCamp/media/tippy/6.0.0/animations/shift-away-extreme.css"
+	rel="stylesheet" type="text/css" />
+<link href="transactions/portalCamp/media/tippy/6.0.0/themes/light.css" rel="stylesheet"
+	type="text/css" />
+
+<!--TextFit JS----->
+<script type="text/javascript" src="transactions/portalCamp/media/textFit/2.4.0/textFit.min.js"></script>
+
+<!--Fancy Box----->
+<script type="text/javascript"
+	src="transactions/portalCamp/media/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<link rel="stylesheet"
+	href="transactions/portalCamp/media/fancybox/3.5.7/jquery.fancybox.min.css" type="text/css" />
+
+<!--Toastify CSS----->
+<link rel="stylesheet" href="transactions/portalCamp/media/toastify/1.6.1/toastify.min.css"
+	type="text/css" />
+
+<!--patientTile----->
+<!-- <script type="text/javascript"
+	src="/BLDAHIMS/bloodbank/transactions/portalCamp/media/prashantUIUX/patientTile/js/patientTile.js"></script>
+<link rel="stylesheet"
+	href="/BLDAHIMS/bloodbank/transactions/portalCamp/media/prashantUIUX/patientTile/css/patientTile.css"
+	type="text/css" /> -->
+
+<!--borderUtilities----->
+<script type="text/javascript"
+	src="transactions/portalCamp/media/prashantUIUX/borderUtilities/js/borderUtilities.js"></script>
+<link rel="stylesheet"
+	href="transactions/portalCamp/media/prashantUIUX/borderUtilities/css/borderUtilities.css"
+	type="text/css" />
+
+<!--loadingEffects----->
+<!-- <script type="text/javascript"
+	src="/BLDAHIMS/bloodbank/transactions/portalCamp/media/prashantUIUX/loadingEffects/js/loadingEffects.js"></script>
+<link rel="stylesheet"
+	href="/BLDAHIMS/bloodbank/transactions/portalCamp/media/prashantUIUX/loadingEffects/css/loadingEffects.css"
+	type="text/css" /> -->
+
+<!--customBootstrap----->
+<script type="text/javascript"
+	src="transactions/portalCamp/media/prashantUIUX/customBootstrap/js/customBootstrap.js"></script>
+<link rel="stylesheet"
+	href="transactions/portalCamp/media/prashantUIUX/customBootstrap/css/customBootstrap.css"
+	type="text/css" />
+<!-- <link rel="stylesheet" href="/BLDAHIMS/bloodbank/transactions/portalCamp/media/prashantUIUX/customBootstrap/css/customSelect.css" /> -->
+
+<!--Fonts--------------->
+<link rel="stylesheet"
+	href="transactions/portalCamp/media/fonts/webfontkit-averta-family/stylesheet.css"
+	type="text/css" />
+
+
+
+<!-- Do not modify this include list -->
+<link href="../hisglobal/bbpublic/assets/elements/css/bootstrap.css" rel="stylesheet">
+
+<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+
+<!--       <link href="../hisglobal/bbpublic/assets/elements/css/revolution-slider.css" rel="stylesheet"> -->
+<link href="../hisglobal/bbpublic/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!--        <link href="../hisglobal/bbpublic/assets/elements/css/animate.min.css" rel="stylesheet"> -->
+<!--            <link href="../hisglobal/bbpublic/assets/elements/css/jquery.fancybox.min.css" rel="stylesheet"> -->
+<!--       <link href="../hisglobal/bbpublic/assets/elements/css/style.min.css" rel="stylesheet">     -->
+<!--       <link href="../hisglobal/bbpublic/assets/elements/css/style.css" rel="stylesheet"> -->
+<link href="../hisglobal/bbpublic/assets/elements/css/combined.css" rel="stylesheet">
+<link href="transactions/assets/css/combined-cleaned.css" rel="stylesheet">
+ <link href="../hisglobal/bbpublic/assets/elements/css/hover.min.css" rel="stylesheet"> 
+      <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      
+<!--       <link href="../hisglobal/bbpublic/assets/elements/css/responsive.css" rel="stylesheet"> -->
+     
+<!--       <link href="../hisglobal/bbpublic/assets/elements/css/homepage.css" rel="stylesheet" type="text/css" /> -->
+<link href="../hisglobal/bbpublic/assets/custom/bbpublic.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]><script src="../../hisglobal/bbpublic/assets/js/html5shiv.min.js"></script><![endif]-->
+      <!--[if lt IE 9]><script src="../../hisglobal/bbpublic/assets/js/respond.min.js"></script><![endif]-->
+      
+       <style>
+    
+   
+.darkbg1{
+background-color:  #c0c0c0;
+border-bottom-color: #be232b;
+
+color: #81181d;
+}
+.darkbg2{
+background-color:;
+border-top-color: #be232b;
+color: yellow;
+}
+ .darkbg3{
+background-color: #666666;
+border-top-color: #be232b;
+color: yellow;
+}
+.darkbg4 {
+background-color: ;
+border-top-color: #be232b;
+color: #ff0000;
+
+}
+</style>
+
+</head>
+<style>
+#nt-example1 li {
+	/*  color: #4e4e4e;
+    background: #F2F2F2;
+    overflow: hidden;
+    height: 80px;
+    padding: 10px;
+    line-height: 36px;
+    list-style: none; */
+	font-size: 15px;
+	/* text-align: left;
+    border-bottom: 1px dotted #2c8162; */
+}
+
+.gb_lb {
+	bottom: 0;
+	color: #fff;
+	font-size: 9px;
+	font-weight: bold;
+	left: 0;
+	line-height: 9px;
+	position: absolute;
+	padding: 7px 0;
+	text-align: center;
+	width: 100px;
+	background: #AF4443;
+	cursor: pointer;
+	position: relative;
+	float: right;
+}
+
+.popover .container-fluid, .popover  .container {
+	-webkit-filter: blur(5px) grayscale(90%);
+}
+
+#datepicker {
+	position: relative;
+}
+
+div.DTTT {
+	margin-bottom: 0.5em;
+	float: right;
+}
+
+div.dataTables_wrapper {
+	clear: both;
+}
+
+table.dataTable tr.odd {
+	/* background-color: #faebd7; */
+}
+
+table.dataTable tr.even {
+	background-color: white;
+}
+
+td.details-control {
+	background: url('../resources/details_open.html') no-repeat center center;
+	cursor: pointer;
+}
+
+tr.shown td.details-control {
+	background: url('../resources/details_close.html') no-repeat center
+		center;
+}
+
+table.dataTable th {
+	/* background-color: #faebd7; */
+}
+
+.statDiv {
+	padding: 10px;
+	border: 1px solid red;
+	border-radius: 15px 0px;
+	background: #CB356B; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #BD3F32, #CB356B);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.text-white {
+	color: white !important;
+}
+
+.text-yellow {
+	color: yellow !important;
+}
+
+.hallofFame {
+	background: #EB3349; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F45C43, #EB3349);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F45C43, #EB3349);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contact {
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.card-header{
+ background-color:#f2dede;
+}
+.card-body{
+
+background-color: #FAFAFA;
+}
+</style>
+<script>
+$(document).ready(function(){
+	$("#manageCamp").click(function(){
+		window.location.href = "onlineCampRequestc124.html?hmode=LOGINSTATS"
+	});
+	
+});
+
+</script>
+
+
+<body onload='checkLocked()'>
+	<!--  menu  -->
+	<meta name="google-signin-client_id" content="388428991836-skpjiv4f033gclp8ih4so5h8a5cb7dm9.apps.googleusercontent.com">
+
+   <script> 
+  
+   
+   $( document ).ajaxComplete(function() {
+	  // initGAPI();
+	 });
+   /* $(function(){
+	   initGAPI();
+   }); */
+   function initGAPI() {
+	   console.log("init gapi");
+	      gapi.load('auth2', function() {
+	        gapi.auth2.init();
+	      });
+	    }
+   function portalLogout()
+	{
+		
+	   
+	   $.get('/BLDAHIMS/bloodbank/portalDonorLogin.cnt?hmode=DONORPORTALLOGOUT',function(data,status) {
+		     // ...parse the data...
+		   //  initGAPI();
+		   //gapi.auth2.getAuthInstance().signOut();
+		     //window.location = "/BLDAHIMS/bloodbank/portalDonorLogin.cnt";
+		     window.location.replace("../../eRaktKosh/hissso/loginLogin.html");
+		     
+		},'html');
+// 	document.forms[0].hmode.value = "PORTALLOGOUT";
+//	document.forms[0].submit();
+	}
+</script>
+    <div class="preloader"></div>
+         <!-- Main Header -->
+         <div class="pre-header">
+            <div class="auto-container clearfix">
+<!--             <a id="text_resize_decrease" class="decreaseFont" id="decreaseFont" href="javascript:;"  title="Decrease font size" role="link">-A</a> -->
+<!-- <a id="text_resize_reset" class="changer" onclick="set_font_size('')" href="javascript:;" title="Reset font size" role="link">A</a> -->
+<!-- <a id="text_resize_increase" class="increaseFont"  href="javascript:;" title="Increase font size" role="link">+A</a> -->
+               <div class="header-social">
+<!--                   <div class="social-links"> -->
+
+<!--                      <a href="#" class="hvr-bounce-to-top"><span class="fa fa-facebook-f"></span></a> -->
+<!--                      <a href="#" class="hvr-bounce-to-top"><span class="fa fa-twitter"></span></a> -->
+<!--                      <a href="#" class="hvr-bounce-to-top"><span class="fa fa-google-plus"></span></a> -->
+<!--                      <a href="/eRaktKosh/hissso/loginLogin" target="_blank" class="hvr-bounce-to-top"><span class="fa fa-user"></span></a> -->
+			
+<!--                   </div> -->
+<!-- 					<a href="/BLDAHIMS/bloodbank/portalUser.cnt">Bankura Blood Bank</a> |  -->
+					<!-- <a href="/BLDAHIMS/bloodbank/transactions/bbpublicindex.html" class="hvr-bounce-to-top"><span class="fa fa-sign-out"></span></a>
+                  	 --><button type="button" class="btn btn-danger" onclick="portalLogout()">Sign Out</button>
+                  	
+               </div>
+            </div>
+         </div>
+         <header class="main-header">
+            <div class="auto-container clearfix">
+               <!--Logo-->
+               <div class="logo"><a href="#"><img src="../hisglobal/bbpublic/images/Rakt5.png" alt="eRaktkosh" title="eRaktkosh"></a></div>
+               <!--Main Menu-->
+               <nav class="main-menu">
+                  <div class="navbar-header">
+<!--                      Toggle Button       -->
+<!--                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> -->
+<!--                      <span class="icon-bar"></span> -->
+<!--                      <span class="icon-bar"></span> -->
+<!--                      <span class="icon-bar"></span> -->
+<!--                      </button> -->
+                  </div>
+                  <div class="navbar-collapse collapse clearfix">
+                     
+<ul class="navigation">
+<!-- <li class="dropdown current"><a href="#">General</a> -->
+<!--     <ul class="submenu"> -->
+<!--       <li><a href="transactions/bbpublicindex.html">Home</a></li> -->
+<!--       <li><a href="/BLDAHIMS/bloodbank/donateblood.cnt">Why Donate Blood ?</a></li> -->
+<!--       <li><a href="/BLDAHIMS/bloodbank/donateblood.cnt">Procedure for Blood Donation</a></li> -->
+<!--       <li><a href="/BLDAHIMS/bloodbank/donateblood.cnt">What you should know</a></li>         -->
+<!--     </ul> </li> -->
+<!--   <li class="dropdown"><a href="#">Services</a> -->
+<!--     <ul class="submenu">       -->
+<!--       <li><a href="/BLDAHIMS/bloodbank/nearbyBBRed.cnt">Nearby Blood Bank</a></li> -->
+<!--       <li><a href="/BLDAHIMS/bloodbank/campSchedule.cnt">Camp Schedule</a></li> -->
+<!--       <li><a href="/BLDAHIMS/bloodbank/stockAvailability.cnt">Blood Bank Stock</a></li> -->
+<!--       <li><a href="#">Donor Registration</a></li> -->
+<!--       <li><a href="#">Blood Request</a></li> -->
+<!--       <li><a href="#">Portal Login</a></li> -->
+<!--     </ul> </li> -->
+   
+  
+<!--   <li class="dropdown "><a href="#">Downloads</a></li> -->
+<!--   <li class="dropdown "><a href="#">Notifications</a>   -->
+<!--   <ul class="submenu"> -->
+<!-- 	   <li><a href="/BLDAHIMS/bloodbank/transactions/bbpublicindex.html#marker">Recent Notifications</a></li> -->
+<!-- 	   <li><a href="/BLDAHIMS/bloodbank/notification.cnt">All Notifications</a></li> -->
+<!--     </ul>   -->
+<!--   </li> -->
+  	
+<!--   <li class="dropdown "><a href="#">About Us</a> -->
+<!--     <ul class="submenu"> -->
+<!--       <li><a href="/BLDAHIMS/bloodbank/contact.cnt">Contact Us</a></li> -->
+
+<!--     </ul> </li> -->
+  
+</ul>
+                  </div>
+               </nav>
+               <!--Main Menu End-->
+               <script src="../../../apis.google.com/js/platform.js" onload="initGAPI()"  ></script>
+            </div>
+         </header>
+	<form name="PortalOnlineCampRequestFB" method="POST" action="https://eraktkosh.mohfw.gov.in/BLDAHIMS/bloodbank/onlineCampRequest.cnt" onsubmit="return false">
+	
+	<div class="container wrapper" id="dialog">
+		<div class="page-header">
+
+
+
+			<div class='row'>
+				<div class=" col-12 col-sm-4 col-md-4 col-lg-4">
+					<h3 class="text-danger">
+						
+					</h3>
+					
+
+				</div>
+				<div class=" col-12 col-sm-4 col-md-4 col-lg-4"></div>
+				<div class='col-12 col-sm-4 col-md-4 col-lg-4' align='right'>
+					<h5 class="text-danger">
+						<b>Last Login : <html><head><title>Exception/Error Detail(s)</title></head><body><h3><center><font color='red'>Error Detail(s)</font></center></h3><h1><center><font color='red'>Error Name:This Activity/Values Not Allowed.<font></center></h1></ul><br><br></body>
+<!-- Mirrored from eraktkosh.mohfw.gov.in/BLDAHIMS/bloodbank/onlineCampRequest.cnt by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jan 2025 07:04:52 GMT -->
+</html>
