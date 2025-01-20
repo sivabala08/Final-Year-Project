@@ -1,0 +1,202 @@
+
+/*************************
+********Service CSS*******
+**************************/
+.service-icon{border-radius:4px;color:#fff;display:inline-block;font-size:36px;height:90px;line-height:90px;width:90px;-webkit-transition:background-color 0.2s ease;transition:background-color 0.2s ease}.our-services .col-sm-4:hover .service-icon{background-color:#333}.our-services .col-sm-4{border-right:1px solid #f2f2f2;border-bottom:1px solid #f2f2f2;padding-bottom:50px}.our-services .col-sm-4:nth-child(4),.our-services .col-sm-4:nth-child(5),.our-services .col-sm-4:nth-child(6){border-bottom:0;padding-top:60px}.our-services .col-sm-4:nth-child(3),.our-services .col-sm-4:nth-child(6){border-right:0}.service-info h3{margin-top:35px}
+#services{margin-top: 6px;}
+
+
+
+
+.pricing-table {
+  text-align: center;
+}
+
+.single-table {
+  padding: 30px 20px 20px;
+  border:1px solid #f2f2f2;
+}
+
+.single-table h3 {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.price {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.price span {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.single-table ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.single-table ul li {
+  line-height: 30px;
+}
+
+.single-table.featured {  
+  color: #fff;
+}
+
+.single-table.featured h3 { 
+  color: #fff;
+}
+
+.single-table.featured .btn.btn-primary {
+  background-color: #fff;
+}
+
+
+/"presets */
+
+a,
+#home-slider .caption h1 span, 
+#twitter-carousel .item span, 
+#footer .footer-bottom, 
+#single-portfolio .close-folio-item:hover, 
+.single-table.featured .btn.btn-primary, 
+.contact-info ul li a:hover, 
+#footer .footer-bottom a  {
+  color: #ff0000;
+}
+
+.btn.btn-primary:hover,
+.btn-submit:hover {
+  /* //background-color: #027db3; */
+}
+
+a:hover, a:focus {
+	color: #027db3;
+}
+
+.main-nav, 
+.service-icon, 
+.progress-bar.progress-bar-primary, 
+.single-table.featured, 
+.btn.btn-primary, 
+.twitter-icon .fa-tint, 
+.twitter-left-control:hover, .twitter-right-control:hover, 
+.post-icon, 
+.entry-header .date:after, 
+.btn-loadmore:hover, 
+.btn-submit,
+#footer, 
+.caption .btn-start:hover, 
+.left-control:hover, 
+.right-control:hover, 
+.folio-overview a:hover {
+  background-color:#ff0000;
+}
+
+/* Main Cleaned */
+#twitter {
+  /* background-image: url(../images/twitter-bg.jpg); */
+}
+
+#twitter > div {
+  text-align: center;
+  position: relative;
+}
+
+#twitter-carousel {
+  position: relative;
+  z-index: 15
+}
+
+.twitter-icon {
+  position: relative;
+  z-index: 15;
+  color: #fff;
+}
+
+.twitter-icon .fa-tint {
+  font-size: 24px;
+  height: 64px;
+  width: 64px;
+  line-height: 65px;
+  border-radius: 50%; 
+  position: relative;
+}
+
+.twitter-icon .fa-tint:after {
+  position: absolute;
+  content: "";
+  border-width: 8px;
+  border-style: solid;
+  left: 24px;
+  bottom: -14px;
+  border-color: red transparent transparent;
+}
+
+#twitter-carousel .item {
+  padding: 0 55px;
+}
+
+#twitter-carousel .item a {
+  color: #ff0000;
+}
+
+.twitter-icon h4 {
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: red;
+  font-family: oswald,Montserrat,sans-serif;
+}
+
+.twitter-left-control, 
+.twitter-right-control {
+  position: absolute;
+  top: 50%;
+  color: #ff0000;
+  border: 1px solid rgba(0,0,0,.1);
+  height:34px;
+  width: 34px;
+  line-height: 31px;
+  margin-top: -17px;
+  font-size: 18px;
+  border-radius: 50%;
+  z-index: 15
+}
+
+.twitter-left-control {
+  left: 80px;
+} 
+
+.twitter-right-control {
+  right: 80px
+}
+
+.twitter-left-control:hover, .twitter-right-control:hover {
+  color: #fff;
+}
+#twitter
+{
+	padding:10px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+/* "twitter ends" */
+.donationWork{
+	
+
+    font-size: 24px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 100%;
+    position: relative;
+    background-color: red;
+    color: white;
+	
+}

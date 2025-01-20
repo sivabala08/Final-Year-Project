@@ -1,0 +1,125 @@
+#floating-panel {
+ position:absolute;
+ top:10px;
+ left:25%;
+ z-index:5;
+ background-color:#fff;
+ padding:5px 5px 5px 10px;
+ border:1px solid #999;
+ text-align:center;
+ font-family:Roboto,sans-serif;
+ line-height:30px;
+}
+#map {
+ height:100%;
+}
+@media only screen and (max-width:1023px) {
+ .lineseparator {
+  border-bottom:2px dashed #333;
+ }
+ .lineseparator::after {
+  content:"Or";
+  text-align:center;
+ }
+}
+@media only screen and (min-width:1024px) {
+ .lineseparator {
+  border-right:1px dashed #333;
+ }
+}
+#controls,#locationField {
+ position:relative;
+ width:480px;
+}
+.item img,.tales {
+ width:100%
+}
+.carousel-control.left,.carousel-control.right {
+ background-image:none!important;
+ opacity:1;
+ top:40%;
+}
+.carousel-caption {
+ text-align:left;
+ height:auto;
+}
+.carousel-caption h2 {
+ line-height:160%;
+}
+.carousel-caption h2 span {
+ background:#428BCA;
+ padding:10px 20px;
+ color:#fff;
+ border-left:3px solid #fff;
+}
+p.caption {
+ background:#fff;
+ padding:6px;
+ text-shadow:none;
+ color:#428BCA;
+}
+.carousel-inner {
+ width:100%;
+ max-height:55vh!important;
+}
+.bgyellow {
+ background:rgba(241,231,103,1);
+ background:-moz-linear-gradient(left,rgba(241,231,103,1) 0,rgba(254,182,69,1) 89%,rgba(254,182,69,1) 99%);
+ background:-webkit-gradient(left top,right top,color-stop(0,rgba(241,231,103,1)),color-stop(89%,rgba(254,182,69,1)),color-stop(99%,rgba(254,182,69,1)));
+ background:-webkit-linear-gradient(left,rgba(241,231,103,1) 0,rgba(254,182,69,1) 89%,rgba(254,182,69,1) 99%);
+ background:-o-linear-gradient(left,rgba(241,231,103,1) 0,rgba(254,182,69,1) 89%,rgba(254,182,69,1) 99%);
+ background:-ms-linear-gradient(left,rgba(241,231,103,1) 0,rgba(254,182,69,1) 89%,rgba(254,182,69,1) 99%);
+ background:linear-gradient(to right,rgba(241,231,103,1) 0,rgba(254,182,69,1) 89%,rgba(254,182,69,1) 99%);
+filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 );
+
+ 
+}
+.bgblue {
+ background:rgba(147,206,222,1);
+ background:-moz-linear-gradient(left,rgba(147,206,222,1) 0,rgba(117,189,209,1) 37%,rgba(73,165,191,1) 99%,rgba(73,165,191,1) 100%);
+ background:-webkit-gradient(left top,right top,color-stop(0,rgba(147,206,222,1)),color-stop(37%,rgba(117,189,209,1)),color-stop(99%,rgba(73,165,191,1)),color-stop(100%,rgba(73,165,191,1)));
+ background:-webkit-linear-gradient(left,rgba(147,206,222,1) 0,rgba(117,189,209,1) 37%,rgba(73,165,191,1) 99%,rgba(73,165,191,1) 100%);
+ background:-o-linear-gradient(left,rgba(147,206,222,1) 0,rgba(117,189,209,1) 37%,rgba(73,165,191,1) 99%,rgba(73,165,191,1) 100%);
+ background:-ms-linear-gradient(left,rgba(147,206,222,1) 0,rgba(117,189,209,1) 37%,rgba(73,165,191,1) 99%,rgba(73,165,191,1) 100%);
+ background:linear-gradient(to right,rgba(147,206,222,1) 0,rgba(117,189,209,1) 37%,rgba(73,165,191,1) 99%,rgba(73,165,191,1) 100%);
+ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
+}
+.bgred {
+ background:rgba(248,80,50,1);
+ background:-moz-linear-gradient(left,rgba(248,80,50,1) 0,rgba(241,111,92,1) 45%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%);
+ background:-webkit-gradient(left top,right top,color-stop(0,rgba(248,80,50,1)),color-stop(45%,rgba(241,111,92,1)),color-stop(51%,rgba(246,41,12,1)),color-stop(71%,rgba(240,47,23,1)),color-stop(100%,rgba(231,56,39,1)));
+ background:-webkit-linear-gradient(left,rgba(248,80,50,1) 0,rgba(241,111,92,1) 45%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%);
+ background:-o-linear-gradient(left,rgba(248,80,50,1) 0,rgba(241,111,92,1) 45%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%);
+ background:-ms-linear-gradient(left,rgba(248,80,50,1) 0,rgba(241,111,92,1) 45%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%);
+ background:linear-gradient(to right,rgba(248,80,50,1) 0,rgba(241,111,92,1) 45%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%);
+ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+}
+.bgtablered {
+ background:#bf2229;
+}
+.bglinkcolor {
+ color:#fff!important;
+}
+.legend {
+ list-style:none;
+}
+.legend li {
+ float:left;
+ margin-right:10px;
+}
+.legend span {
+ border:1px solid #ccc;
+ float:left;
+ width:15px;
+ height:20px;
+ margin:2px;
+}
+.legend .govt {
+ background-color:#F0AAAD;
+}
+.legend .others {
+ background-color:#fff;
+}
+.legend .legendtext {
+ font-size:small;
+}

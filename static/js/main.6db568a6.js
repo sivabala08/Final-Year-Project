@@ -8543,7 +8543,7 @@
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
-                                                    href: "about.html",
+                                                    href: "about.html2",
                                                     children: "About LifeConnect"
                                                 })
                                             }), (0, de.jsx)("li", {
