@@ -3,7 +3,7 @@ import React from 'react'
 export default function Aboutpage() {
 
     const handleButtonClick = () => {
-        window.location.href = '/BLDAHIMS/bloodbank/about.html';
+        window.location.href = '/BLDAHIMS/bloodbank/about.cnt';
     };
 
     return ( <
@@ -20,15 +20,15 @@ export default function Aboutpage() {
         div className = "about-container pb-4" >
         <
         h3 className = "section-heading text-center pt-5 pb-3" >
-        About Life Connect <
+        About e - Raktkosh <
         /h3> <
         div >
         <
         p className = "about-text" >
-        Life Connect is a platform to provide information about blood banks, blood availability, blood donation camps and assistant automation.More than 3800 blood banks are registered on Life Connect from 29 states and 8 UTs. <
+        e - Raktkosh is a platform to provide information about blood banks, blood availability, blood donation camps and assistant automation.More than 3800 blood banks are registered on e - Raktkosh from 29 states and 8 UTs. <
         /p> <
         p className = "about-text" >
-        Life Connect is a citizen centric portal and mobile app
+        e - Raktkosh is a citizen centric portal and mobile app
         for various services such as nearest blood bank, blood availability & blood donation camps information.It enforces blood banks to strictly follow national blood policy standards and guidelines. <
         /p> <
         /div> <

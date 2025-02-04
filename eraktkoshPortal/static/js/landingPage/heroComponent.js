@@ -15,7 +15,7 @@ export default function HeroComponent() {
     }, []);
 
     const handleClick = () => {
-        window.location.href = "/BLDAHIMS/bloodbank/portalDonorLogin.html";
+        window.location.href = "/BLDAHIMS/bloodbank/portalDonorLogin.cnt";
     };
 
     const handleIndicatorClick = (index) => {

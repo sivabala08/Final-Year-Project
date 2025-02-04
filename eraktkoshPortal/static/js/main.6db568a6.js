@@ -7515,7 +7515,7 @@
         }
     }(), n.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), (() => {
         var e = {},
-            t = "e-raktkosh:";
+            t = "Life-Connect:";
         n.l = (r, a, o, l) => {
             if (e[r]) e[r].push(a);
             else {
@@ -8543,24 +8543,24 @@
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
-                                                    href: "/BLDAHIMS/bloodbank/about.html",
-                                                    children: "About eRaktkosh"
+                                                    href: "about.html2",
+                                                    children: "About LifeConnect"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
                                                     className: "links",
                                                     href: "https://eraktkosh.mohfw.gov.in/eRaktkoshUtilities/#/",
-                                                    children: "e-Raktkosh Dashboard"
+                                                    children: "Life-Connect Dashboard"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
-                                                    href: "/BLDAHIMS/bloodbank/notification.html",
+                                                    href: "/BLDAHIMS/bloodbank/notification.cnt",
                                                     children: "Notifications"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
-                                                    href: "/BLDAHIMS/bloodbank/eraktkoshfaq.html",
-                                                    children: "eRaktkosh FAQs"
+                                                    href: "/BLDAHIMS/bloodbank/eraktkoshfaq.cnt",
+                                                    children: "LifeConnect FAQs"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
@@ -8574,12 +8574,12 @@
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
-                                                    href: "/BLDAHIMS/bloodbank/contact.html",
+                                                    href: "/BLDAHIMS/bloodbank/contact.cnt",
                                                     children: "Contact Us"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
-                                                    href: "/BLDAHIMS/bloodbank/downloadMobile.html",
+                                                    href: "/BLDAHIMS/bloodbank/downloadMobile.cnt",
                                                     children: "Mobile Apps"
                                                 })
                                             })]
@@ -8598,17 +8598,17 @@
                                             className: "ps-0",
                                             children: [(0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
-                                                    href: "/BLDAHIMS/bloodbank/stockAvailability.html",
+                                                    href: "/BLDAHIMS/bloodbank/stockAvailability.cnt",
                                                     children: "Blood Availability"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
-                                                    href: "/BLDAHIMS/bloodbank/nearbyBBRed.html",
+                                                    href: "/BLDAHIMS/bloodbank/nearbyBBRed.cnt",
                                                     children: "Blood Bank Directory"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
-                                                    href: "/BLDAHIMS/bloodbank/portalThalassemiaLogin.html",
+                                                    href: "/BLDAHIMS/bloodbank/portalThalassemiaLogin.cnt",
                                                     children: "Thalassemia Request"
                                                 })
                                             })]
@@ -8627,22 +8627,22 @@
                                             className: "ps-0",
                                             children: [(0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
-                                                    href: "/BLDAHIMS/bloodbank/campSchedule.html",
+                                                    href: "/BLDAHIMS/bloodbank/campSchedule.cnt",
                                                     children: "Blood Donation Camps"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
-                                                    href: "/BLDAHIMS/bloodbank/portalDonorLogin.html",
+                                                    href: "/BLDAHIMS/bloodbank/portalDonorLogin.cnt",
                                                     children: "Donor Login"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
-                                                    href: "/BLDAHIMS/bloodbank/donateblood.html",
+                                                    href: "/BLDAHIMS/bloodbank/donateblood.cnt",
                                                     children: "About Blood Donation"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
-                                                    href: "/BLDAHIMS/bloodbank/onlineCampRequestNewBB.html",
+                                                    href: "/BLDAHIMS/bloodbank/onlineCampRequestNewBB.cnt",
                                                     children: "Register VBD Camp"
                                                 })
                                             })]
@@ -8662,13 +8662,13 @@
                                             children: [(0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
                                                     className: "links",
-                                                    href: "/BLDAHIMS/bloodbank/portalThalassemiaLogin.html",
-                                                    children: "eRaktkosh Login"
+                                                    href: "/eRaktKosh/hissso/loginLogin",
+                                                    children: "LifeConnect Login"
                                                 })
                                             }), (0, de.jsx)("li", {
                                                 children: (0, de.jsx)("a", {
                                                     className: "links",
-                                                    href: "/BLDAHIMS/bloodbank/bbOnboard.html?hmode=GETONBOARDFORMESSENTIAL",
+                                                    href: "/BLDAHIMS/bloodbank/bbOnboard.cnt?hmode=GETONBOARDFORMESSENTIAL",
                                                     children: "Add Your Blood Bank"
                                                 })
                                             })]
@@ -8678,7 +8678,7 @@
                                         children: (0, de.jsx)("a", {
                                             className: "nav-link",
                                             href: "https://eraktkosh.mohfw.gov.in/eRaktkoshUtilities/#/",
-                                            children: "e-Raktkosh Dashboard"
+                                            children: "Life-Connect Dashboard"
                                         })
                                     }), (0, de.jsx)("div", {
                                         className: "d-xl-flex d-lg-flex d-none",
@@ -8687,7 +8687,7 @@
                                             children: (0, de.jsx)("a", {
                                                 className: "nav-link",
                                                 href: "https://eraktkosh.mohfw.gov.in/eRaktkoshUtilities/#/",
-                                                children: "e-Raktkosh Dashboard"
+                                                children: "Life-Connect Dashboard"
                                             })
                                         })
                                     })]
@@ -8721,27 +8721,27 @@
                                         imgSrc: "assets/images/blood-search.png",
                                         altText: "Blood Availability Search",
                                         cardText: "Blood Availability Search",
-                                        url: "/BLDAHIMS/bloodbank/stockAvailability.html"
+                                        url: "/BLDAHIMS/bloodbank/stockAvailability.cnt"
                                     }, {
                                         imgSrc: "assets/images/blood-directory.png",
                                         altText: "Blood Bank Directory",
                                         cardText: "Blood Bank Directory",
-                                        url: "/BLDAHIMS/bloodbank/nearbyBBRed.html"
+                                        url: "/BLDAHIMS/bloodbank/nearbyBBRed.cnt"
                                     }, {
                                         imgSrc: "assets/images/blood-camp.png",
                                         altText: "Blood Donation Camps",
                                         cardText: "Blood Donation Camps",
-                                        url: "/BLDAHIMS/bloodbank/campSchedule.html"
+                                        url: "/BLDAHIMS/bloodbank/campSchedule.cnt"
                                     }, {
                                         imgSrc: "assets/images/donor-login.png",
                                         altText: "Donor Login",
                                         cardText: "Donor Login",
-                                        url: "/BLDAHIMS/bloodbank/portalDonorLogin.html"
+                                        url: "/BLDAHIMS/bloodbank/portalDonorLogin.cnt"
                                     }, {
                                         imgSrc: "assets/images/register-camp.png",
                                         altText: "Register Voluntary Blood Camp",
                                         cardText: "Register Voluntary Blood Camp",
-                                        url: "/BLDAHIMS/bloodbank/onlineCampRequestNewBB.html"
+                                        url: "/BLDAHIMS/bloodbank/onlineCampRequestNewBB.cnt"
                                     }].map(((t, a) => (0, de.jsx)("div", {
                                         className: "col-xl-2 col-lg-4 col-sm-6 col-12 mb-3 mb-xl-4",
                                         children: (0, de.jsx)("a", {
@@ -8792,19 +8792,19 @@
                                     className: "about-container pb-4",
                                     children: [(0, de.jsx)("h3", {
                                         className: "section-heading text-center pt-5 pb-3",
-                                        children: "About e-Raktkosh"
+                                        children: "About Life-Connect"
                                     }), (0, de.jsxs)("div", {
                                         children: [(0, de.jsx)("p", {
                                             className: "about-text",
-                                            children: "e-Raktkosh is a platform to provide information about blood banks, blood availability, blood donation camps and assistant automation. More than 3800 blood banks are registered on e-Raktkosh from 29 states and 8 UTs."
+                                            children: "Life-Connect is a platform to provide information about blood banks, blood availability, blood donation camps and assistant automation. More than 3800 blood banks are registered on Life-Connect from 29 states and 8 UTs."
                                         }), (0, de.jsx)("p", {
                                             className: "about-text",
-                                            children: "e-Raktkosh is a citizen centric portal and mobile app for various services such as nearest blood bank, blood availability & blood donation camps information. It enforces blood banks to strictly follow national blood policy standards and guidelines."
+                                            children: "Life-Connect is a citizen centric portal and mobile app for various services such as nearest blood bank, blood availability & blood donation camps information. It enforces blood banks to strictly follow national blood policy standards and guidelines."
                                         })]
                                     }), (0, de.jsxs)("button", {
                                         className: "btn readBtn",
                                         onClick: () => {
-                                            window.location.href = "/BLDAHIMS/bloodbank/about.html"
+                                            window.location.href = "/BLDAHIMS/bloodbank/about.cnt"
                                         },
                                         children: ["Read More", " ", (0, de.jsx)("img", {
                                             className: "ms-2",
@@ -8905,15 +8905,15 @@
                                 }), (0, de.jsxs)("div", {
                                     className: "d-flex flex-column",
                                     children: [(0, de.jsx)("a", {
-                                        href: "/BLDAHIMS/bloodbank/stockAvailability.html",
+                                        href: "/BLDAHIMS/bloodbank/stockAvailability.cnt",
                                         className: "footer-details mb-2",
                                         children: "Blood Availability"
                                     }), (0, de.jsx)("a", {
-                                        href: "/BLDAHIMS/bloodbank/nearbyBBRed.html",
+                                        href: "/BLDAHIMS/bloodbank/nearbyBBRed.cnt",
                                         className: "footer-details mb-2",
                                         children: "Blood Bank Directory"
                                     }), (0, de.jsx)("a", {
-                                        href: "/BLDAHIMS/bloodbank/portalThalassemiaLogin.html",
+                                        href: "/BLDAHIMS/bloodbank/portalThalassemiaLogin.cnt",
                                         className: "footer-details mb-2",
                                         children: "Thalessemia Request"
                                     })]
@@ -8929,19 +8929,19 @@
                                 }), (0, de.jsxs)("div", {
                                     className: "d-flex flex-column",
                                     children: [(0, de.jsx)("a", {
-                                        href: "/BLDAHIMS/bloodbank/campSchedule.html",
+                                        href: "/BLDAHIMS/bloodbank/campSchedule.cnt",
                                         className: "footer-details mb-2",
                                         children: "Blood Donation Camp"
                                     }), (0, de.jsx)("a", {
-                                        href: "/BLDAHIMS/bloodbank/portalDonorLogin.html",
+                                        href: "/BLDAHIMS/bloodbank/portalDonorLogin.cnt",
                                         className: "footer-details mb-2",
                                         children: "Donor Login"
                                     }), (0, de.jsx)("a", {
-                                        href: "/BLDAHIMS/bloodbank/donateblood.html",
+                                        href: "/BLDAHIMS/bloodbank/donateblood.cnt",
                                         className: "footer-details mb-2",
                                         children: "About Blood Donation"
                                     }), (0, de.jsx)("a", {
-                                        href: "/BLDAHIMS/bloodbank/onlineCampRequestNewBB.html",
+                                        href: "/BLDAHIMS/bloodbank/onlineCampRequestNewBB.cnt",
                                         className: "footer-details mb-2",
                                         children: "Register VBD Camp"
                                     })]
@@ -8956,9 +8956,9 @@
                                     children: [(0, de.jsx)("a", {
                                         href: "/eRaktKosh/hissso/loginLogin",
                                         className: "footer-details mb-2",
-                                        children: "e-Raktkosh Login"
+                                        children: "Life-Connect Login"
                                     }), (0, de.jsx)("a", {
-                                        href: "/BLDAHIMS/bloodbank/bbOnboard.html?hmode=GETONBOARDFORMESSENTIAL",
+                                        href: "/BLDAHIMS/bloodbank/bbOnboard.cnt?hmode=GETONBOARDFORMESSENTIAL",
                                         className: "footer-details mb-2",
                                         children: "Add your Blood Bank"
                                     })]
@@ -8971,17 +8971,17 @@
                                 }), (0, de.jsxs)("div", {
                                     className: "d-flex flex-column",
                                     children: [(0, de.jsx)("a", {
-                                        href: "/BLDAHIMS/bloodbank/about.html",
+                                        href: "/BLDAHIMS/bloodbank/about.cnt",
                                         className: "footer-details mb-2",
-                                        children: "About e-Raktkosh"
+                                        children: "About Life-Connect"
                                     }), (0, de.jsx)("a", {
-                                        href: "/BLDAHIMS/bloodbank/notification.html",
+                                        href: "/BLDAHIMS/bloodbank/notification.cnt",
                                         className: "footer-details mb-2",
                                         children: "Notifications"
                                     }), (0, de.jsx)("a", {
-                                        href: "/BLDAHIMS/bloodbank/eraktkoshfaq.html",
+                                        href: "/BLDAHIMS/bloodbank/eraktkoshfaq.cnt",
                                         className: "footer-details mb-2",
-                                        children: "e-Raktkosh FAQs"
+                                        children: "Life-Connect FAQs"
                                     }), (0, de.jsxs)("a", {
                                         href: "/BLDAHIMS/bloodbank/transactions/bbpublicindexGallery.html",
                                         className: "footer-details mb-2",
@@ -8991,11 +8991,11 @@
                                         className: "footer-details mb-2",
                                         children: "Video Gallery"
                                     }), (0, de.jsx)("a", {
-                                        href: "/BLDAHIMS/bloodbank/contact.html",
+                                        href: "/BLDAHIMS/bloodbank/contact.cnt",
                                         className: "footer-details mb-2",
                                         children: "Contact Us"
                                     }), (0, de.jsx)("a", {
-                                        href: "/BLDAHIMS/bloodbank/downloadMobile.html",
+                                        href: "/BLDAHIMS/bloodbank/downloadMobile.cnt",
                                         className: "footer-details mb-2",
                                         children: "Mobile Apps"
                                     })]
@@ -9004,7 +9004,7 @@
                                 className: "col-12 col-md-6 col-xl-2 mb-3",
                                 children: [(0, de.jsx)("h5", {
                                     className: "heading",
-                                    children: "Download e-raktkosh App"
+                                    children: "Download Life-Connect App"
                                 }), (0, de.jsx)("img", {
                                     className: "mb-0 mb-xl-1 me-2 me-xl-0",
                                     src: "assets/images/apple-store.png"
@@ -9062,15 +9062,15 @@
                             className: "text-center mb-1",
                             children: [(0, de.jsx)("a", {
                                 className: "footer-links",
-                                href: "/BLDAHIMS/bloodbank/termsAndConditions.html",
+                                href: "/BLDAHIMS/bloodbank/termsAndConditions.cnt",
                                 children: "Terms & Conditions"
                             }), "|", (0, de.jsx)("a", {
                                 className: "footer-links",
-                                href: "/BLDAHIMS/bloodbank/privacyPolicy.html",
+                                href: "/BLDAHIMS/bloodbank/privacyPolicy.cnt",
                                 children: "Privacy Policy"
                             }), "|", (0, de.jsx)("a", {
                                 className: "footer-links",
-                                href: "/BLDAHIMS/bloodbank/accessibilityStmt.html",
+                                href: "/BLDAHIMS/bloodbank/accessibilityStmt.cnt",
                                 children: "Accessibility Statement"
                             }), "|", (0, de.jsx)("a", {
                                 className: "footer-links",
@@ -9078,7 +9078,7 @@
                                 children: "Last Updated: 12 March 2024"
                             }), "|", (0, de.jsx)("a", {
                                 className: "footer-links",
-                                href: "/BLDAHIMS/bloodbank/eraktkoshSiteMap.html",
+                                href: "/BLDAHIMS/bloodbank/eraktkoshSiteMap.cnt",
                                 children: "Site Map"
                             }), "|", (0, de.jsx)("a", {
                                 className: "footer-links",
@@ -9167,7 +9167,7 @@
                 return () => clearInterval(e)
             }), []);
             const r = () => {
-                window.location.href = "/BLDAHIMS/bloodbank/portalDonorLogin.html"
+                window.location.href = "/BLDAHIMS/bloodbank/portalDonorLogin.cnt"
             };
             return (0, de.jsx)("section", {
                 className: "heroComponent",
@@ -9202,7 +9202,7 @@
                                         alt: "First Image"
                                     })
                                 }), (0, de.jsx)("div", {
-                                    className: "carousel-image carousel-image-right",
+                                    className: "carousel-image carousel-image-rightc",
                                     children: (0, de.jsx)("img", {
                                         src: "assets/gif/heroComponent1.gif",
                                         className: "d-block w-100",
@@ -11186,7 +11186,7 @@
                                     children: (0, de.jsxs)("button", {
                                         className: "btn searchBtn",
                                         onClick: () => {
-                                            window.location.href = "/BLDAHIMS/bloodbank/nearbyBBRed.html"
+                                            window.location.href = "/BLDAHIMS/bloodbank/nearbyBBRed.cnt"
                                         },
                                         children: ["Find Nearest Blood Bank To Donate", (0, de.jsx)("img", {
                                             className: "ms-2",

@@ -78,33 +78,33 @@ export default function Navbar() {
         <
         li >
         <
-        a href = "..\..\eraktkoshPortal\index.html" >
+        a href = "" >
         Home <
         /a> <
         /li> <
         li >
         <
-        a href = "\BLDAHIMS\bloodbank\about.html" >
-        About eRaktkosh <
+        a href = "/BLDAHIMS/bloodbank/about.cnt" >
+        About lifeconnect <
         /a> <
         /li> <
         li >
         <
         a className = "links"
         href = "https://eraktkosh.mohfw.gov.in/eRaktkoshUtilities/#/" >
-        Life Connect Dashboard <
+        Life-Connect Dashboard <
         /a> <
         /li> <
         li >
         <
-        a href = "/BLDAHIMS/bloodbank/notification.html" >
+        a href = "/BLDAHIMS/bloodbank/notification.cnt" >
         Notifications <
         /a> <
         /li> <
         li >
         <
-        a href = "/BLDAHIMS/bloodbank/eraktkoshfaq.html" >
-        eRaktkosh FAQs <
+        a href = "/BLDAHIMS/bloodbank/eraktkoshfaq.cnt" >
+        lifeconnect FAQs <
         /a> <
         /li> <
         li >
@@ -121,13 +121,13 @@ export default function Navbar() {
         /li> <
         li >
         <
-        a href = "/BLDAHIMS/bloodbank/contact.html" >
+        a href = "/BLDAHIMS/bloodbank/contact.cnt" >
         Contact Us <
         /a> <
         /li> <
         li >
         <
-        a href = "/BLDAHIMS/bloodbank/downloadMobile.html" >
+        a href = "/BLDAHIMS/bloodbank/downloadMobile.cnt" >
         Mobile Apps <
         /a> <
         /li> <
@@ -151,19 +151,19 @@ export default function Navbar() {
         <
         li >
         <
-        a href = "/BLDAHIMS/bloodbank/stockAvailability.html" >
+        a href = "/BLDAHIMS/bloodbank/stockAvailability.cnt" >
         Blood Availability <
         /a> <
         /li> <
         li >
         <
-        a href = "/BLDAHIMS/bloodbank/nearbyBBRed.html" >
+        a href = "/BLDAHIMS/bloodbank/nearbyBBRed.cnt" >
         Blood Bank Directory <
         /a> <
         /li> <
         li >
         <
-        a href = "/BLDAHIMS/bloodbank/portalThalassemiaLogin.html" >
+        a href = "/BLDAHIMS/bloodbank/portalThalassemiaLogin.cnt" >
         Thalassemia Request <
         /a> <
         /li> <
@@ -185,24 +185,24 @@ export default function Navbar() {
         <
         li >
         <
-        a href = "/BLDAHIMS/bloodbank/campSchedule.html" >
+        a href = "/BLDAHIMS/bloodbank/campSchedule.cnt" >
         Blood Donation Camps <
         /a> <
         /li> <
         li > { /* <Link className="links" to="/donorLogin"> Donor Login</Link> */ } <
-        a href = "/BLDAHIMS/bloodbank/portalDonorLogin.html" >
+        a href = "/BLDAHIMS/bloodbank/portalDonorLogin.cnt" >
         Donor Login <
         /a> <
         /li> <
         li >
         <
-        a href = "/BLDAHIMS/bloodbank/donateblood.html" >
+        a href = "/BLDAHIMS/bloodbank/donateblood.cnt" >
         About Blood Donation <
         /a> <
         /li> <
         li >
         <
-        a href = "/BLDAHIMS/bloodbank/onlineCampRequestNewBB.html" >
+        a href = "/BLDAHIMS/bloodbank/onlineCampRequestNewBB.cnt" >
         Register VBD Camp <
         /a> <
         /li> <
@@ -231,7 +231,7 @@ export default function Navbar() {
         li >
         <
         a className = "links"
-        href = "/BLDAHIMS/bloodbank/bbOnboard.html?hmode=GETONBOARDFORMESSENTIAL" >
+        href = "/BLDAHIMS/bloodbank/bbOnboard.cnt?hmode=GETONBOARDFORMESSENTIAL" >
         Add Your Blood Bank <
         /a> <
         /li> <
@@ -243,7 +243,7 @@ export default function Navbar() {
         <
         a className = "nav-link"
         href = "https://eraktkosh.mohfw.gov.in/eRaktkoshUtilities/#/" >
-        Life Connect Dashboard <
+        e - Raktkosh Dashboard <
         /a> <
         /li> {
             /* <li className="nav-item d-flex d-xl-none d-lg-none">
@@ -281,7 +281,7 @@ export default function Navbar() {
         <
         a className = "nav-link"
         href = "https://eraktkosh.mohfw.gov.in/eRaktkoshUtilities/#/" >
-        Life Connect Dashboard <
+        e - Raktkosh Dashboard <
         /a> <
         /li>
 

@@ -18,31 +18,31 @@ export default function Service() {
             imgSrc: "assets/images/blood-search.png",
             altText: "Blood Availability Search",
             cardText: "Blood Availability Search",
-            url: '/BLDAHIMS/bloodbank/stockAvailability.html'
+            url: '/BLDAHIMS/bloodbank/stockAvailability.cnt'
         },
         {
             imgSrc: "assets/images/blood-directory.png",
             altText: "Blood Bank Directory",
             cardText: "Blood Bank Directory",
-            url: '/BLDAHIMS/bloodbank/nearbyBBRed.html'
+            url: '/BLDAHIMS/bloodbank/nearbyBBRed.cnt'
         },
         {
             imgSrc: "assets/images/blood-camp.png",
             altText: "Blood Donation Camps",
             cardText: "Blood Donation Camps",
-            url: '/BLDAHIMS/bloodbank/campSchedule.html'
+            url: '/BLDAHIMS/bloodbank/campSchedule.cnt'
         },
         {
             imgSrc: "assets/images/donor-login.png",
             altText: "Donor Login",
             cardText: "Donor Login",
-            url: '/BLDAHIMS/bloodbank/portalDonorLogin.html'
+            url: '/BLDAHIMS/bloodbank/portalDonorLogin.cnt'
         },
         {
             imgSrc: "assets/images/register-camp.png",
             altText: "Register Voluntary Blood Camp",
             cardText: "Register Voluntary Blood Camp",
-            url: '/BLDAHIMS/bloodbank/onlineCampRequestNewBB.html'
+            url: '/BLDAHIMS/bloodbank/onlineCampRequestNewBB.cnt'
         },
     ];
 

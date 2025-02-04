@@ -35,15 +35,15 @@ export default function Footer() {
         for Blood < /h5> <
         div className = "d-flex flex-column" >
         <
-        a href = "/BLDAHIMS/bloodbank/stockAvailability.html"
+        a href = "/BLDAHIMS/bloodbank/stockAvailability.cnt"
         className = "footer-details mb-2" >
         Blood Availability <
         /a> <
-        a href = "/BLDAHIMS/bloodbank/nearbyBBRed.html"
+        a href = "/BLDAHIMS/bloodbank/nearbyBBRed.cnt"
         className = "footer-details mb-2" >
         Blood Bank Directory <
         /a> <
-        a href = "/BLDAHIMS/bloodbank/portalThalassemiaLogin.html"
+        a href = "/BLDAHIMS/bloodbank/portalThalassemiaLogin.cnt"
         className = "footer-details mb-2" >
         Thalessemia Request <
         /a> <
@@ -55,19 +55,19 @@ export default function Footer() {
         h5 className = "heading" > Senior Director < /h5>     <
         div className = "d-flex flex-column" >
         <
-        a href = "/BLDAHIMS/bloodbank/campSchedule.html"
+        a href = "/BLDAHIMS/bloodbank/campSchedule.cnt"
         className = "footer-details mb-2" >
         Blood Donation Camp <
         /a> { /* <Link className="footer-details mb-2" to="/donorLogin"> Donor Login</Link> */ } <
-        a href = "/BLDAHIMS/bloodbank/portalDonorLogin.html"
+        a href = "/BLDAHIMS/bloodbank/portalDonorLogin.cnt"
         className = "footer-details mb-2" >
         Donor Login <
         /a> <
-        a href = "/BLDAHIMS/bloodbank/donateblood.html"
+        a href = "/BLDAHIMS/bloodbank/donateblood.cnt"
         className = "footer-details mb-2" >
         About Blood Donation <
         /a> <
-        a href = "/BLDAHIMS/bloodbank/onlineCampRequestNewBB.html"
+        a href = "/BLDAHIMS/bloodbank/onlineCampRequestNewBB.cnt"
         className = "footer-details mb-2" >
         Register VBD Camp <
         /a> <
@@ -82,7 +82,7 @@ export default function Footer() {
         className = "footer-details mb-2" >
         e - Raktkosh Login <
         /a> <
-        a href = "/BLDAHIMS/bloodbank/bbOnboard.html?hmode=GETONBOARDFORMESSENTIAL"
+        a href = "/BLDAHIMS/bloodbank/bbOnboard.cnt?hmode=GETONBOARDFORMESSENTIAL"
         className = "footer-details mb-2" >
         Add your Blood Bank <
         /a> <
@@ -93,15 +93,15 @@ export default function Footer() {
         h5 className = "heading" > About Us < /h5> <
         div className = "d-flex flex-column" >
         <
-        a href = "/BLDAHIMS/bloodbank/about.html"
+        a href = "/BLDAHIMS/bloodbank/about.cnt"
         className = "footer-details mb-2" >
         About e - Raktkosh <
         /a> <
-        a href = "/BLDAHIMS/bloodbank/notification.html"
+        a href = "/BLDAHIMS/bloodbank/notification.cnt"
         className = "footer-details mb-2" >
         Notifications <
         /a> <
-        a href = "/BLDAHIMS/bloodbank/eraktkoshfaq.html"
+        a href = "/BLDAHIMS/bloodbank/eraktkoshfaq.cnt"
         className = "footer-details mb-2" >
         e - Raktkosh FAQs <
         /a> <
@@ -115,11 +115,11 @@ export default function Footer() {
         className = "footer-details mb-2" >
         Video Gallery <
         /a> <
-        a href = "/BLDAHIMS/bloodbank/contact.html"
+        a href = "/BLDAHIMS/bloodbank/contact.cnt"
         className = "footer-details mb-2" >
         Contact Us <
         /a> <
-        a href = "/BLDAHIMS/bloodbank/downloadMobile.html"
+        a href = "/BLDAHIMS/bloodbank/downloadMobile.cnt"
         className = "footer-details mb-2" >
         Mobile Apps <
         /a> <
@@ -193,17 +193,17 @@ export default function Footer() {
         div className = "text-center mb-1" >
         <
         a className = "footer-links"
-        href = "/BLDAHIMS/bloodbank/termsAndConditions.html" >
+        href = "/BLDAHIMS/bloodbank/termsAndConditions.cnt" >
         Terms & Conditions <
         /a> |
         <
         a className = "footer-links"
-        href = "/BLDAHIMS/bloodbank/privacyPolicy.html" >
+        href = "/BLDAHIMS/bloodbank/privacyPolicy.cnt" >
         Privacy Policy <
         /a> |
         <
         a className = "footer-links"
-        href = "/BLDAHIMS/bloodbank/accessibilityStmt.html" >
+        href = "/BLDAHIMS/bloodbank/accessibilityStmt.cnt" >
         Accessibility Statement <
         /a> |
         <
@@ -213,7 +213,7 @@ export default function Footer() {
         /a> |
         <
         a className = "footer-links"
-        href = "/BLDAHIMS/bloodbank/eraktkoshSiteMap.html" >
+        href = "/BLDAHIMS/bloodbank/eraktkoshSiteMap.cnt" >
         Site Map <
         /a> |
         <
