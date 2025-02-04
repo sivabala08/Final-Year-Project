@@ -8,7 +8,7 @@
 
 .header {
     align-items: center;
-    background: #f80707;
+    background: #b60000;
     box-shadow: 0 0 24px 0 #2e1f1f1f;
     display: flex;
     justify-content: space-between;
@@ -320,10 +320,10 @@
 }
 
 .about-section .readBtn {
-    border: 1px solid #c0222b;
+    border: 1px solid #b60000;
     border-radius: 6px;
     box-shadow: 0 2px 8px 0 #0000000a;
-    color: #c0222b;
+    color: #b30009;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: .32px;
@@ -374,7 +374,7 @@
 
 .learn-donation .selectBtn,
 .learn-donation .selectBtn:hover {
-    border: 1px solid #c0222b;
+    border: 1px solid #b60000;
     border-radius: 8px;
     box-shadow: 0 4px 24px 0 #0000001f
 }
@@ -384,7 +384,7 @@
 }
 
 .learn-donation .selectBtn.active {
-    background: #c0222b;
+    background: #b60000;
     border-radius: 8px;
     box-shadow: 0 4px 24px 0 #0000001f;
     color: #fff
@@ -461,7 +461,7 @@
 }
 
 .donation-working .section-heading .donation {
-    color: #c0222b;
+    color: #b60000;
     font-size: 40px;
     font-weight: 600;
     letter-spacing: -.96px;
@@ -476,7 +476,7 @@
 }
 
 .donation-working .card .card-text {
-    color: #c0222b;
+    color: #b60000;
     font-size: 20px;
     font-weight: 600
 }
@@ -535,7 +535,7 @@
 }
 
 .donationType .searchBtn {
-    background: #c0222b;
+    background: #b60000;
     border-radius: 6px;
     box-shadow: 0 2px 8px 0 #0000000a;
     color: #fff;
@@ -701,7 +701,7 @@
 }
 
 .carouselwrapper .card .learnBtn {
-    color: #c0222b;
+    color: #b60000;
     font-size: 12px;
     font-weight: 600
 }
@@ -756,7 +756,7 @@
 }
 
 .password-section .modal-content .modal-title {
-    color: #c0222b;
+    color: #b60000;
     font-size: 24px;
     font-weight: 500;
     line-height: 150%
@@ -815,7 +815,7 @@
 }
 
 .btn-primary-signIn {
-    background: #c0222b;
+    background: #b60000;
     border-radius: 4px;
     box-shadow: 0 2px 8px 0 #0000000a;
     color: #fff;
@@ -827,23 +827,23 @@
 
 .btn-primary-signIn:hover {
     background-color: #fff;
-    border: 1px solid #c0222b;
-    color: #c0222b
+    border: 1px solid #b60000;
+    color: #b60000
 }
 
 .btn-primary-outline {
-    border: 1px solid #c0222b;
+    border: 1px solid #b60000;
     border-radius: 4px;
     box-shadow: 0 2px 8px 0 #0000000a;
-    color: #c0222b;
+    color: #b60000;
     font-size: 20px;
     font-weight: 600;
     transition: background-color .3s ease, color .3s ease, border .3s ease
 }
 
 .btn-primary-outline:hover {
-    background-color: #c0222b;
-    border: 1px solid #c0222b;
+    background-color: #b60000;
+    border: 1px solid #b60000;
     color: #fff
 }
 
@@ -953,10 +953,10 @@
 }
 
 .heroComponent .carousel-inner .carousel-caption .imgBtn {
-    background: #c0222b;
+    background: #b60000;
     border: none;
     border-radius: 4px;
-    box-shadow: 0 4px 24px 0 #c0222b80;
+    box-shadow: 0 4px 24px 0 #b6000080;
     color: #fff;
     font-size: 20px;
     font-weight: 600;
