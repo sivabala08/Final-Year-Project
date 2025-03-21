@@ -1,0 +1,952 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Header Styles with Background Image */
+.header {
+    background-color: #8b0000;
+    background-image: url('header-bg.jpg'); /* Added background image */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply; /* Blends with the background color */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.header:hover {
+    background-color: #700000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.1); /* Zoom in effect */
+}
+
+
+/* Navigation Menu with Dropdowns */
+.nav-menu {
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+    margin: 0 5px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.nav-menu .main-link {
+    position: relative;
+}
+
+.nav-menu .main-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.nav-menu .main-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 50%;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.nav-menu .main-link:hover::after {
+    width: 70%;
+    left: 15%;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: white;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.nav-item:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown a {
+    color: #8b0000;
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    font-weight: normal;
+    border-radius: 0;
+}
+
+.dropdown a:last-child {
+    border-bottom: none;
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown a:hover {
+    background-color: #f9f9f9;
+    color: #6b0000;
+    padding-left: 20px;
+}
+
+/*hero section */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    color: white;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    margin-left: 10%;
+  }
+  
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .hero {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+  }
+  
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .hero-background .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  @keyframes fadeAnimation {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    23% { opacity: 1; }
+    33% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  
+  .hero-text {
+    position: absolute;
+    bottom: 5%; /* Positions the text near the bottom */
+    left: 5%; /* Positions the text near the left */
+    z-index: 2;
+  }
+
+  .donor-login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    float: left; /* This will position the button on the left */
+}
+
+/* You might also want to add a hover effect */
+.donor-login-btn:hover {
+    background-color: #c0392b;
+}
+.stats-bar {
+    background-color: rgba(139, 0, 0, 0.8);
+    padding: 15px 0;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    transition: all 0.3s ease;
+}
+
+.stats-bar:hover {
+    background-color: rgba(139, 0, 0, 0.9);
+    padding: 18px 0;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-item h3 {
+    font-size: 2.5em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover h3 {
+    color: #ff9999;
+}
+
+.stat-item p {
+    font-size: 1em;
+}
+
+/* Services Section */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    color: #8b0000;
+    font-size: 2em;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.services h2::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #8b0000;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+
+.services:hover h2::after {
+    width: 100px;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 200px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: rgba(139, 0, 0, 0.05);
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(139, 0, 0, 0.2);
+}
+
+.service-card:hover::before {
+    height: 100%;
+}
+
+.service-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.2); /* Zoom in effect */
+}
+
+.service-card h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover h3 {
+    color: #8b0000;
+}
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+.about:hover {
+    background-color: #f0f0f0;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.about-text h2 {
+    color: #8b0000;
+    font-size: 2em;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.about:hover .about-text h2 {
+    transform: translateX(10px);
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.about:hover .about-text p {
+    color: #000;
+}
+
+.about-image {
+    flex: 1;
+    background-image: url('blood-cells.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.about:hover .about-image {
+    transform: scale(1.03); /* Zoom effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: #8b0000;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.read-more-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.5s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #6b0000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(107, 0, 0, 0.3);
+}
+
+.read-more-btn:hover::before {
+    left: 100%;
+}
+
+/* Blood Type Section */
+.blood-type {
+    padding: 40px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.blood-type:hover {
+    background-color: #fffaf8;
+}
+
+.blood-type h2 {
+    color: #8b0000;
+    font-size: 2em;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.blood-type:hover h2 {
+    transform: scale(1.05);
+}
+
+.blood-type-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.blood-type-btn {
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 60px;
+    transition: all 0.3s ease;
+}
+
+.blood-type-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-color: #8b0000;
+}
+
+.blood-type-btn.active {
+    background-color: #8b0000;
+    color: white;
+    border-color: #8b0000;
+}
+
+.blood-compatibility {
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.compatibility-card {
+    background-color: #fff5e6;
+    padding: 20px;
+    border-radius: 5px;
+    width: 45%;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.compatibility-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.compatibility-card.give {
+    background-color: #e6f7ff;
+}
+
+.compatibility-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.compatibility-card:hover .compatibility-icon {
+    transform: scale(1.2); /* Zoom effect for emoji */
+}
+
+.fact-box {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.fact-box:hover {
+    background-color: #e6f7ff;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fact-box p {
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.fact-box:hover p {
+    color: #000;
+}
+
+.fact-box span {
+    color: #8b0000;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.fact-box:hover span {
+    color: #6b0000;
+    text-decoration: underline;
+}
+
+/* Donation Types Section */
+.donation-types {
+    padding: 40px 20px;
+}
+
+.donation-types h2 {
+    color: #8b0000;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.donation-types:hover h2 {
+    letter-spacing: 1px;
+}
+
+.donation-types-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.donation-types:hover .donation-types-intro {
+    transform: scale(1.02);
+}
+
+.donation-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.donation-sidebar {
+    width: 20%;
+    border-right: 2px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.donation-type {
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.donation-type::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(139, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.donation-type:hover {
+    padding-left: 20px;
+}
+
+.donation-type:hover::before {
+    width: 100%;
+}
+
+.donation-type.active {
+    background-color: #ffebeb;
+    color: #8b0000;
+    border-left: 3px solid #8b0000;
+}
+
+.donation-content {
+    width: 60%;
+    padding: 0 30px;
+    transition: all 0.3s ease;
+}
+
+.donation-grid:hover .donation-content {
+    transform: translateX(5px);
+}
+
+.donation-image {
+    width: 20%;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.donation-image img {
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.donation-image:hover img {
+    transform: scale(1.1); /* Zoom in effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.donation-faq {
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateX(5px);
+}
+
+.faq-question {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover .faq-question {
+    color: #8b0000;
+}
+
+.faq-answer {
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover .faq-answer {
+    color: #000;
+}
+
+/* Donation Process Section */
+.donation-process {
+    padding: 40px 20px;
+    background-color: #ffebeb;
+    transition: all 0.4s ease;
+}
+
+.donation-process:hover {
+    background-color: #ffe0e0;
+}
+
+.donation-process h2 {
+    text-align: center;
+    color: #8b0000;
+    font-size: 2em;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+.donation-process:hover h2 {
+    transform: scale(1.05);
+}
+
+.process-steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.process-step {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.process-step::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: rgba(139, 0, 0, 0.03);
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.process-step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(139, 0, 0, 0.1);
+}
+
+.process-step:hover::before {
+    height: 100%;
+}
+
+.process-icon {
+    color: #8b0000;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    transition: all 0.4s ease;
+}
+
+.process-step:hover .process-icon {
+    transform: scale(1.2); /* Zoom effect for emoji */
+}
+
+.process-step h3 {
+    margin-bottom: 10px;
+    color: #8b0000;
+    transition: all 0.3s ease;
+}
+
+.process-step:hover h3 {
+    letter-spacing: 1px;
+}
+
+.process-step p {
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.process-step:hover p {
+    color: #000;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    transition: all 0.4s ease;
+}
+
+.footer:hover {
+    background-color: #2a2a2a;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 20%;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.footer-column:hover {
+    transform: translateY(-5px);
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    color: #ddd;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #8b0000;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.footer-column:hover h3 {
+    color: #fff;
+}
+
+.footer-column:hover h3::after {
+    width: 50px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-column ul li:hover {
+    transform: translateX(5px);
+}
+
+.footer-column a {
+    color: #bbb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-column a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    bottom: -2px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-column a:hover::after {
+    width: 100%;
+}
+
+.app-download {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.app-download img {
+    height: 40px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.app-download img:hover {
+    transform: scale(1.1); /* Zoom in effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Add zoom out effect for images with a specific class */
+.zoom-out-effect {
+    transition: transform 0.3s ease;
+}
+
+.zoom-out-effect:hover {
+    transform: scale(0.9); /* Zoom out effect */
+}
+
+@media (max-width: 992px) {
+    .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        background-color: #8b0000;
+        width: 250px;
+        box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2);
+        padding: 10px 0;
+        border-radius: 4px;
+        display: none;
+    }
+
+    .nav-item {
+        margin: 0;
+        width: 100%;
+    }
+
+    .dropdown {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background-color: #9a1a1a;
+        padding-left: 15px;
+        display: none;
+    }
+
+    .dropdown a {
+        color: white;
+        border-bottom: 1px solid #8b0000;
+    }
+
+    .dropdown a:hover {
+        background-color: #8b0000;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        color: white;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+}

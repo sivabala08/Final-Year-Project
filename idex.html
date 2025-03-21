@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Connect - Blood Donation Portal</title>
+    <link rel="stylesheet" href="assets/style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="assets/images/main-icon.png" alt="Life Connect Logo">
+            <h1>Life Connect</h1>
+        </div>
+        <nav class="nav-menu">
+            <div class="nav-item">
+                <a href="#" class="main-link">HOME</a>
+                <div class="dropdown">
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">News & Events</a>
+                    <a href="#">FAQs</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="main-link">LOOKING FOR BLOOD</a>
+                <div class="dropdown">
+                    <a href="#">Search Blood Banks</a>
+                    <a href="#">Emergency Requests</a>
+                    <a href="#">Blood Availability</a>
+                    <a href="#">Request History</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="main-link">WANT TO DONATE BLOOD</a>
+                <div class="dropdown">
+                    <a href="#">Register as Donor</a>
+                    <a href="#">Find Donation Camps</a>
+                    <a href="#">Schedule Appointment</a>
+                    <a href="#">Donation History</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="main-link">BLOOD BANK LOGIN</a>
+                <div class="dropdown">
+                    <a href="#">Hospital Login</a>
+                    <a href="#">Blood Bank Staff</a>
+                    <a href="#">Admin Portal</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="main-link">Life Connect Dashboard</a>
+                <div class="dropdown">
+                    <a href="#">National Statistics</a>
+                    <a href="#">Regional Data</a>
+                    <a href="#">Reports</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-background">
+      <div class="slide" style="background-image: url('assets/images/header2.png'); animation: fadeAnimation 16s infinite;"></div>
+      <div class="slide" style="background-image: url('assets/images/header3.png'); animation: fadeAnimation 16s infinite 4s;"></div>
+      <div class="slide" style="background-image: url('assets/images/header4.png'); animation: fadeAnimation 16s infinite 8s;"></div>
+      <div class="slide" style="background-image: url('assets/images/header5.png'); animation: fadeAnimation 16s infinite 12s;"></div>
+    </div>
+    <div class="hero-text">
+      <a href="login.html" class="donor-login-btn">Donor Login</a>
+    </div>
+  </section>
+    
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="stat-item">
+            <h3>7053908</h3>
+            <p>Donor Registered</p>
+        </div>
+        <div class="stat-item">
+            <h3>7684758</h3>
+            <p>Blood Units Collected</p>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="assets/images/blood-search.png"  alt="Blood Search">
+                <h3>Blood Availability Search</h3>
+            </div>
+            <div class="service-card">
+                <img src="assets/images/blood-directory.png" alt="Blood Bank">
+                <h3>Blood Bank Directory</h3>
+            </div>
+            <div class="service-card">
+                <img src="assets/images/register-camp.png" alt="Donation Camps">
+                <h3>Blood Donation Camps</h3>
+            </div>
+            <div class="service-card">
+                <img src="assets/images/donor-login.png" alt="Donor Login">
+                <h3>Donor Login</h3>
+            </div>
+            <div class="service-card">
+                <img src="assets/images/doctor.png" alt="Register Camp">
+                <h3>Register Voluntary Blood Camp</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-text">
+            <h2>About Life Connect</h2>
+            <p>Life Connect is a platform to provide information about blood banks, blood availability, blood donation camps and assistant automation.</p>
+            <p>More than 3800 blood banks are registered on Life Connect from 29 states and 8 UTs.</p>
+            <p>Life Connect is a citizen centric portal and mobile app for various services such as nearest blood bank, blood availability & blood donation camps information. It enforces blood banks to strictly follow national blood policy standards and guidelines.</p>
+            <a href="#" class="read-more-btn">Read More</a>
+        </div>
+        <div class="about-image"></div>
+    </section>
+
+    <!-- Blood Type Section -->
+    <section class="blood-type">
+        <h2>Learn About Donation</h2>
+        <div class="blood-type-selector">
+            <div class="blood-type-btn active">A+</div>
+            <div class="blood-type-btn">O+</div>
+            <div class="blood-type-btn">B+</div>
+            <div class="blood-type-btn">AB+</div>
+            <div class="blood-type-btn">A-</div>
+            <div class="blood-type-btn">O-</div>
+            <div class="blood-type-btn">B-</div>
+            <div class="blood-type-btn">AB-</div>
+        </div>
+
+        <div class="blood-compatibility">
+            <div class="compatibility-card">
+                <div class="compatibility-icon">👤</div>
+                <h3>You can take from</h3>
+                <p>O+ O- A+ A-</p>
+            </div>
+            <div class="compatibility-card give">
+                <div class="compatibility-icon">👤</div>
+                <h3>You can give to</h3>
+                <p>A+ AB+</p>
+            </div>
+        </div>
+
+        <div class="fact-box">
+            <p>One Blood Donation can save upto <span>Three Lives</span></p>
+        </div>
+    </section>
+
+    <!-- Donation Types Section -->
+    <section class="donation-types">
+        <h2>Types of Donation</h2>
+        <div class="donation-types-intro">
+            <p>The average human body contains about five litres of blood, which is made of several cellular and non-cellular components such as <span style="color: #8b0000;">Red blood cell, Platelet, and Plasma</span>.</p>
+        </div>
+
+        <div class="donation-grid">
+            <div class="donation-sidebar">
+                <div class="donation-type active">Packed Red Blood Cells</div>
+                <div class="donation-type">Plasma</div>
+                <div class="donation-type">Platelets</div>
+            </div>
+            <div class="donation-content">
+                <h3>Correction of severe anemia in a number of conditions and blood loss in case of child birth, surgery or trauma settings.</h3>
+
+                <div class="donation-faq">
+                    <div class="faq-item">
+                        <div class="faq-question">Lasts For?</div>
+                        <div class="faq-answer">Red cells can be stored for 42 days at 2-6 degree celsius.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How long does it take to donate?</div>
+                        <div class="faq-answer">15-30 minutes to donate including the pre-donation check-up.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How often can I donate?</div>
+                        <div class="faq-answer">Male donors can donate again after 90 days and female donors can donate again after 120 days.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="donation-image">
+                <img src="assets/images/tabImg.png" alt="Red Blood Cells">
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Process Section -->
+    <section class="donation-process">
+        <h2>How Donation Works?</h2>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="process-icon">✅</div>
+                <h3>Registration Process</h3>
+                <p>Sign up and schedule your first with ease</p>
+            </div>
+            <div class="process-step">
+                <div class="process-icon">❤️</div>
+                <h3>Health Screening</h3>
+                <p>A simple check-up to ensure you're ready to donate</p>
+            </div>
+            <div class="process-step">
+                <div class="process-icon">❤️🤲</div>
+                <h3>Donation Day</h3>
+                <p>Relax as our professional staff guide you through</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Looking for Blood</h3>
+                <ul>
+                    <li><a href="#">Blood Availability</a></li>
+                    <li><a href="#">Blood Bank Directory</a></li>
+                    <li><a href="#">Thalassemia Request</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Web Information Manager</h3>
+                <ul>
+                    <li><a href="#">Blood Donation Camp</a></li>
+                    <li><a href="#">Donor Login</a></li>
+                    <li><a href="#">About Blood Donation</a></li>
+                    <li><a href="#">Register VBD Camp</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Blood Bank Login</h3>
+                <ul>
+                    <li><a href="#">Life Connect Login</a></li>
+                    <li><a href="#">Add your Blood Bank</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">About Life Connect</a></li>
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="#">Life Connect FAQs</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Video Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Download Life Connect App</h3>
+                <div class="app-download">
+                    <img src="https://via.placeholder.com/120x40" alt="App Store">
+                    <img src="https://via.placeholder.com/120x40" alt="Google Play">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Blood type selector
+            const bloodTypeBtns = document.querySelectorAll('.blood-type-btn');
+            bloodTypeBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    bloodTypeBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    // Update compatibility information based on selected blood type
+                    const bloodType = btn.textContent;
+                    updateCompatibility(bloodType);
+                });
+            });
+            
+            // Donation type tabs
+            const donationTypes = document.querySelectorAll('.donation-type');
+            donationTypes.forEach(type => {
+                type.addEventListener('click', () => {
+                    // Remove active class from all types
+                    donationTypes.forEach(t => t.classList.remove('active'));
+                    // Add active class to clicked type
+                    type.classList.add('active');
+                    
+                    // Update donation content based on selected type
+                    const donationType = type.textContent;
+                    updateDonationContent(donationType);
+                });
+            });
+            
+            // Functions to update content
+            function updateCompatibility(bloodType) {
+                const takeFromElement = document.querySelector('.compatibility-card:first-child p');
+                const giveToElement = document.querySelector('.compatibility-card:last-child p');
+                
+                // Define compatibility for each blood type
+                const compatibility = {
+                    'A+': { takeFrom: 'A+, A-, O+, O-', giveTo: 'A+, AB+' },
+                    'O+': { takeFrom: 'O+, O-', giveTo: 'O+, A+, B+, AB+' },
+                    'B+': { takeFrom: 'B+, B-, O+, O-', giveTo: 'B+, AB+' },
+                    'AB+': { takeFrom: 'All Blood Types', giveTo: 'AB+' },
+                    'A-': { takeFrom: 'A-, O-', giveTo: 'A+, A-, AB+, AB-' },
+                    'O-': { takeFrom: 'O-', giveTo: 'All Blood Types' },
+                    'B-': { takeFrom: 'B-, O-', giveTo: 'B+, B-, AB+, AB-' },
+                    'AB-': { takeFrom: 'A-, B-, AB-, O-', giveTo: 'AB+, AB-' }
+                };
+                
+                // Update content if blood type is defined
+                if(compatibility[bloodType]) {
+                    takeFromElement.textContent = compatibility[bloodType].takeFrom;
+                    giveToElement.textContent = compatibility[bloodType].giveTo;
+                }
+            }
+            
+            function updateDonationContent(donationType) {
+                const contentTitle = document.querySelector('.donation-content h3');
+                const contentImage = document.querySelector('.donation-image img');
+                const faqItems = document.querySelectorAll('.faq-answer');
+                
+                // Define content for each donation type
+                const donationContent = {
+                    'Packed Red Blood Cells': {
+                        title: 'Correction of severe anemia in a number of conditions and blood loss in case of child birth, surgery or trauma settings.',
+                        image: 'red-blood-cells.jpg',
+                        faqs: [
+                            'Red cells can be stored for 42 days at 2-6 degree celsius.',
+                            '15-30 minutes to donate including the pre-donation check-up.',
+                            'Male donors can donate again after 90 days and female donors can donate again after 120 days.'
+                        ]
+                    },
+                    'Plasma': {
+                        title: 'Used for patients with liver diseases, burns and clotting factor deficiencies.',
+                        image: 'plasma.jpg',
+                        faqs: [
+                            'Plasma can be stored for up to one year when frozen.',
+                            'About 45 minutes to donate plasma.',
+                            'You can donate plasma every 28 days.'
+                        ]
+                    },
+                    'Platelets': {
+                        title: 'Helps patients with leukemia, cancer, or those undergoing transplants or major surgeries.',
+                        image: 'platelets.jpg',
+                        faqs: [
+                            'Platelets can be stored for only 5 days at room temperature.',
+                            'About 1.5 to 2 hours to donate platelets.',
+                            'You can donate platelets every 7 days, up to 24 times a year.'
+                        ]
+                    }
+                };
+                
+                // Update content if donation type is defined
+                if(donationContent[donationType]) {
+                    contentTitle.textContent = donationContent[donationType].title;
+                    contentImage.src = donationContent[donationType].image || 'https://via.placeholder.com/200';
+                    
+                    // Update FAQs
+                    faqItems.forEach((item, index) => {
+                        if(donationContent[donationType].faqs[index]) {
+                            item.textContent = donationContent[donationType].faqs[index];
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
