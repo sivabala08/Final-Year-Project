@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Connect - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.4; /* Reduced line height */
+            background-image: url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(139, 0, 0, 0.7);
+            backdrop-filter: blur(8px);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 450px;
+            width: 100%;
+            padding: 20px; /* Reduced padding */
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .container:hover {
+            animation-play-state: paused;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px; /* Reduced margin */
+        }
+
+        .logo img {
+            width: 30px; /* Smaller logo */
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .logo h2 {
+            color: #8b0000;
+            font-size: 1.3em; /* Smaller text */
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 15px; /* Reduced margin */
+            position: relative;
+        }
+
+        .form-header::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 2px; /* Thinner line */
+            background: linear-gradient(to right, transparent, #8b0000, transparent);
+            bottom: -5px; /* Reduced spacing */
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width 0.3s ease;
+        }
+
+        .form-header:hover::after {
+            width: 200px;
+        }
+
+        .form-header h1 {
+            color: #8b0000;
+            font-size: 1.7em; /* Smaller heading */
+            margin-bottom: 5px; /* Reduced spacing */
+        }
+
+        .form-header p {
+            color: #666;
+            font-size: 0.9em; /* Smaller text */
+        }
+
+        .form-group {
+            margin-bottom: 12px; /* Reduced spacing between form groups */
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 4px; /* Reduced spacing */
+            font-weight: bold;
+            color: #333;
+            transition: color 0.3s ease;
+            font-size: 0.9em; /* Smaller label */
+        }
+
+        .form-group:hover label {
+            color: #8b0000;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px; /* Smaller input fields */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 0.9em; /* Smaller text */
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #8b0000;
+            box-shadow: 0 0 8px rgba(139, 0, 0, 0.2);
+            outline: none;
+        }
+
+        .form-group:hover input {
+            border-color: #8b0000;
+        }
+
+        .submit-btn {
+            background-color: #8b0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 16px; /* Smaller button */
+            font-size: 0.95em; /* Smaller text */
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            margin-top: 8px; /* Reduced spacing */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+            z-index: 1;
+        }
+
+        .submit-btn:hover {
+            background-color: #6b0000;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(139, 0, 0, 0.3);
+        }
+
+        .submit-btn:hover::before {
+            left: 100%;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 10px; /* Reduced spacing */
+            font-size: 0.85em; /* Smaller text */
+            color: #666;
+        }
+
+        .signup-link a {
+            color: #8b0000;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .signup-link a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background: #8b0000;
+            bottom: -2px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+
+        .signup-link a:hover::after {
+            width: 100%;
+        }
+
+        .error {
+            color: #8b0000;
+            font-size: 0.75em; /* Smaller error text */
+            margin-top: 3px; /* Reduced spacing */
+            display: none;
+        }
+
+        .social-login {
+            margin-top: 12px; /* Reduced spacing */
+            text-align: center;
+        }
+
+        .social-login h3 {
+            position: relative;
+            color: #666;
+            font-size: 0.85em; /* Smaller text */
+            margin-bottom: 8px; /* Reduced spacing */
+        }
+
+        .social-login h3::before,
+        .social-login h3::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 30%;
+            height: 1px;
+            background-color: #ddd;
+        }
+
+        .social-login h3::before {
+            left: 0;
+        }
+
+        .social-login h3::after {
+            right: 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 12px; /* Reduced spacing */
+        }
+
+        .social-icon {
+            width: 32px; /* Smaller icons */
+            height: 32px;
+            border-radius: 50%;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            font-size: 0.85em; /* Smaller text */
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .otp-container {
+            display: none;
+        }
+
+        .otp-fields {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px; /* Reduced spacing */
+        }
+
+        .otp-field {
+            width: 36px; /* Smaller OTP fields */
+            height: 36px;
+            text-align: center;
+            font-size: 1em; /* Smaller text */
+            border-radius: 5px;
+            margin: 0 4px;
+            padding: 0;
+        }
+
+        .resend-otp {
+            text-align: right;
+            font-size: 0.8em; /* Smaller text */
+            margin-top: 6px; /* Added spacing */
+        }
+
+        .resend-otp a {
+            color: #8b0000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .form-step {
+            display: none;
+        }
+
+        .form-step.active {
+            display: block;
+        }
+
+        .form-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px; /* Reduced spacing */
+        }
+
+        .prev-btn {
+            background-color: #f5f5f5;
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 8px 12px; /* Smaller button */
+            font-size: 0.85em; /* Smaller text */
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .prev-btn:hover {
+            background-color: #e5e5e5;
+        }
+
+        .next-btn {
+            background-color: #8b0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px; /* Smaller button */
+            font-size: 0.85em; /* Smaller text */
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .next-btn:hover {
+            background-color: #6b0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/api/placeholder/40/40" alt="Life Connect Logo">
+            <h2>Life Connect</h2>
+        </div>
+        <div class="form-header">
+            <h1>Complete Profile</h1>
+            <p>Help us connect you with blood donation opportunities</p>
+        </div>
+
+        <form id="loginForm">
+            <!-- Step 1: Personal Information -->
+            <div class="form-step active" id="step1">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <div id="nameError" class="error">Please enter your full name</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="18" max="100" required>
+                    <div id="ageError" class="error">You must be at least 18 years old</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="City, State" required>
+                    <div id="locationError" class="error">Please enter your location</div>
+                </div>
+
+                <div class="form-navigation">
+                    <div></div> <!-- Empty div to maintain flex spacing -->
+                    <button type="button" class="next-btn" id="toStep2">Next</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Contact Information -->
+            <div class="form-step" id="step2">
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <div id="phoneError" class="error">Please enter a valid phone number</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <div id="emailError" class="error">Please enter a valid email address</div>
+                </div>
+
+                <div class="form-navigation">
+                    <button type="button" class="prev-btn" id="backToStep1">Back</button>
+                    <button type="button" class="next-btn" id="toStep3">Verify Contact</button>
+                </div>
+            </div>
+
+            <!-- Step 3: OTP Verification -->
+            <div class="form-step" id="step3">
+                <div class="form-group">
+                    <label for="otp">OTP Verification</label>
+                    <p style="font-size: 0.85em; margin-bottom: 10px;">We've sent a verification code to your phone and email.</p>
+                    
+                    <div class="otp-fields">
+                        <input type="text" class="otp-field" maxlength="1" oninput="moveToNext(this)" required>
+                        <input type="text" class="otp-field" maxlength="1" oninput="moveToNext(this)" required>
+                        <input type="text" class="otp-field" maxlength="1" oninput="moveToNext(this)" required>
+                        <input type="text" class="otp-field" maxlength="1" oninput="moveToNext(this)" required>
+                        <input type="text" class="otp-field" maxlength="1" oninput="moveToNext(this)" required>
+                        <input type="text" class="otp-field" maxlength="1" required>
+                    </div>
+                    
+                    <div id="otpError" class="error">Please enter a valid OTP</div>
+                    
+                    <div class="resend-otp">
+                        <a id="resendOtp">Resend OTP</a>
+                    </div>
+                </div>
+
+                <div class="form-navigation">
+                    <button type="button" class="prev-btn" id="backToStep2">Back</button>
+                    <button type="submit" class="submit-btn">Complete Registration</button>
+                </div>
+            </div>
+
+            <div class="signup-link">
+                Don't have an account? <a href="signup.html">Sign up</a>
+            </div>
+
+            <div class="social-login">
+                <h3>Or continue with</h3>
+                <div class="social-icons">
+                    <div class="social-icon">G</div>
+                    <div class="social-icon">f</div>
+                    <div class="social-icon">in</div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.getElementById('loginForm');
+    const step1 = document.getElementById('step1');
+    const step2 = document.getElementById('step2');
+    const step3 = document.getElementById('step3');
+    
+    // Navigation buttons remain the same as in your original code...
+    const toStep2 = document.getElementById('toStep2');
+    const backToStep1 = document.getElementById('backToStep1');
+    const toStep3 = document.getElementById('toStep3');
+    const backToStep2 = document.getElementById('backToStep2');
+    
+    // Generate a device fingerprint
+    async function getDeviceFingerprint() {
+        // Basic fingerprinting - in production use a library like FingerprintJS
+        const screenProps = `${window.screen.width}x${window.screen.height}x${window.screen.colorDepth}`;
+        const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        const language = navigator.language;
+        const platform = navigator.platform;
+        const userAgent = navigator.userAgent;
+        
+        // Create a simple hash of these properties
+        const fingerprint = await hashString(screenProps + timezone + language + platform + userAgent);
+        return fingerprint;
+    }
+    
+    // Simple hashing function (for demo purposes)
+    async function hashString(str) {
+        const encoder = new TextEncoder();
+        const data = encoder.encode(str);
+        const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+    
+    // Step 1 to Step 2 validation remains the same...
+    toStep2.addEventListener('click', function() {
+        let isValid = true;
+        
+        // Your validation logic here...
+        const name = document.getElementById('name').value;
+        if (name.trim() === '') {
+            document.getElementById('nameError').style.display = 'block';
+            isValid = false;
+        } else {
+            document.getElementById('nameError').style.display = 'none';
+        }
+        
+        // More validation...
+        
+        if (isValid) {
+            step1.classList.remove('active');
+            step2.classList.add('active');
+        }
+    });
+    
+    // Step 2 back to Step 1 remains the same...
+    
+    // Step 2 to Step 3 - Modified to include device fingerprinting
+    toStep3.addEventListener('click', async function() {
+        let isValid = true;
+        
+        // Your validation logic here...
+        
+        if (isValid) {
+            // Show loading indicator
+            const loadingIndicator = document.createElement('div');
+            loadingIndicator.innerText = 'Sending OTP...';
+            loadingIndicator.style.textAlign = 'center';
+            loadingIndicator.style.marginTop = '10px';
+            loadingIndicator.style.color = '#8b0000';
+            step2.appendChild(loadingIndicator);
+            
+            // Get user contact info
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            
+            try {
+                // Get device fingerprint
+                const deviceId = await getDeviceFingerprint();
+                
+                // Call API to send OTP
+                const response = await fetch('/api/send-otp', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        phone: phone,
+                        email: email,
+                        deviceId: deviceId
+                    })
+                });
+                
+                const data = await response.json();
+                
+                // Remove loading indicator
+                step2.removeChild(loadingIndicator);
+                
+                if (data.success) {
+                    // Store session ID and device ID
+                    sessionStorage.setItem('otpSessionId', data.sessionId);
+                    sessionStorage.setItem('deviceId', deviceId);
+                    
+                    // Move to OTP verification step
+                    step2.classList.remove('active');
+                    step3.classList.add('active');
+                    
+                    // Show where OTP was sent
+                    const maskedPhone = phone.substring(0, 2) + '*****' + phone.substring(7);
+                    const emailParts = email.split('@');
+                    const maskedEmail = emailParts[0].substring(0, 2) + '***@' + emailParts[1];
+                    
+                    const otpInfoElement = document.createElement('p');
+                    otpInfoElement.style.fontSize = '0.85em';
+                    otpInfoElement.innerHTML = `OTP sent to:<br>Phone: ${maskedPhone}<br>Email: ${maskedEmail}`;
+                    
+                    const otpLabel = document.querySelector('label[for="otp"]');
+                    otpLabel.parentNode.insertBefore(otpInfoElement, otpLabel.nextSibling);
+                    
+                    // Focus on first OTP input field
+                    document.querySelector('.otp-field').focus();
+                    
+                    // Start countdown for OTP expiration
+                    startOtpCountdown();
+                } else {
+                    // Show error if OTP sending failed
+                    alert('Failed to send OTP: ' + (data.message || 'Please try again later'));
+                }
+            } catch (error) {
+                // Remove loading indicator
+                if (loadingIndicator.parentNode) {
+                    step2.removeChild(loadingIndicator);
+                }
+                
+                // Handle error in sending OTP
+                console.error('Error sending OTP:', error);
+                alert('Failed to send OTP. Please check your connection and try again.');
+            }
+        }
+    });
+    
+    // Form submission with OTP verification - Modified to include device ID
+    loginForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        // Collect OTP from fields
+        const otpFields = document.querySelectorAll('.otp-field');
+        let otpValue = '';
+        let otpComplete = true;
+        
+        otpFields.forEach(field => {
+            if (field.value.trim() === '') {
+                otpComplete = false;
+            }
+            otpValue += field.value;
+        });
+        
+        if (!otpComplete) {
+            document.getElementById('otpError').style.display = 'block';
+            document.getElementById('otpError').textContent = 'Please enter the complete OTP';
+        } else {
+            document.getElementById('otpError').style.display = 'none';
+            
+            // Show verification in progress
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalBtnText = submitBtn.textContent;
+            submitBtn.textContent = 'Verifying...';
+            submitBtn.disabled = true;
+            
+            try {
+                // Get stored session ID and device ID
+                const sessionId = sessionStorage.getItem('otpSessionId') || '';
+                const deviceId = sessionStorage.getItem('deviceId') || '';
+                
+                // Call API to verify OTP
+                const response = await fetch('/api/verify-otp', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        phone: document.getElementById('phone').value,
+                        email: document.getElementById('email').value,
+                        otp: otpValue,
+                        sessionId: sessionId,
+                        deviceId: deviceId  // Include device ID for verification
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    // Clear OTP session
+                    sessionStorage.removeItem('otpSessionId');
+                    sessionStorage.removeItem('deviceId');
+                    
+                    // Show success message
+                    alert('Profile completed successfully! Redirecting to dashboard...');
+                    
+                    // Get form data for submission to backend
+                    const formData = {
+                        name: document.getElementById('name').value,
+                        age: document.getElementById('age').value,
+                        location: document.getElementById('location').value,
+                        phone: document.getElementById('phone').value,
+                        email: document.getElementById('email').value,
+                        deviceId: deviceId  // Include device ID with profile data
+                    };
+                    
+                    // Submit form data to backend
+                    await fetch('/api/complete-profile', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(formData)
+                    });
+                    
+                    // Redirect to dashboard after a brief delay
+                    setTimeout(function() {
+                        window.location.href = 'index.html';
+                    }, 1000);
+                } else {
+                    // Show error if OTP verification failed
+                    document.getElementById('otpError').style.display = 'block';
+                    document.getElementById('otpError').textContent = data.message || 'Invalid OTP. Please try again.';
+                    
+                    // Reset button
+                    submitBtn.textContent = originalBtnText;
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                console.error('Error verifying OTP:', error);
+                document.getElementById('otpError').style.display = 'block';
+                document.getElementById('otpError').textContent = 'Verification failed. Please try again.';
+                
+                // Reset button
+                submitBtn.textContent = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        }
+    });
+    
+    // Rest of your code remains the same (OTP countdown, resend, etc.)
+});  </script>
+</body>
+</html>
