@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Life Connect Blood Donation Portal</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        /* Added hover effects */
+        
+        .read-more-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .footer-column ul li a:hover {
+            color: #8b0000;
+            text-decoration: underline;
+            padding-left: 5px;
+        }
+        
+        .stats-bar .stat-item:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+        
+        /* Impact cards hover effect */
+        .impact-card {
+            width: 45%;
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .impact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(139, 0, 0, 0.2);
+        }
+        
+        /* Testimonial hover effect */
+        .testimonial-card {
+            width: 30%;
+            margin-bottom: 30px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(139, 0, 0, 0.25);
+        }
+        
+        /* Team member hover effect */
+        .team-member {
+            width: 22%;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-8px);
+        }
+        
+        .team-member:hover .team-photo {
+            box-shadow: 0 10px 20px rgba(139, 0, 0, 0.3);
+            border: 3px solid #8b0000;
+        }
+        
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 auto 20px auto;
+            transition: all 0.3s ease;
+        }
+        
+        /* Partner logo hover effect */
+        .partner-logo {
+            width: 180px;
+            height: 100px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .partner-logo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(139, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+            <div class="logo">
+                <img src="assets/images/main-icon.png" alt="Life Connect Logo">
+                <h1>Life Connect</h1>
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-item">
+                    <a href="#" class="main-link">HOME</a>
+                    <div class="dropdown">
+                        <a href="#">About Us</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">News & Events</a>
+                        <a href="#">FAQs</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="main-link">LOOKING FOR BLOOD</a>
+                    <div class="dropdown">
+                        <a href="#">Search Blood Banks</a>
+                        <a href="#">Emergency Requests</a>
+                        <a href="#">Blood Availability</a>
+                        <a href="#">Request History</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="main-link">WANT TO DONATE BLOOD</a>
+                    <div class="dropdown">
+                        <a href="#">Register as Donor</a>
+                        <a href="#">Find Donation Camps</a>
+                        <a href="#">Schedule Appointment</a>
+                        <a href="#">Donation History</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="main-link">BLOOD BANK LOGIN</a>
+                    <div class="dropdown">
+                        <a href="#">Hospital Login</a>
+                        <a href="#">Blood Bank Staff</a>
+                        <a href="#">Admin Portal</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="main-link">Life Connect Dashboard</a>
+                    <div class="dropdown">
+                        <a href="#">National Statistics</a>
+                        <a href="#">Regional Data</a>
+                        <a href="#">Reports</a>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <!-- Hero Section with About Us Banner -->
+    <section class="hero" style="height: 40vh;">
+        <div class="hero-background">
+            <div class="slide" style="background-image: url('assets/images/about-banner.jpg'); opacity: 1;"></div>
+        </div>
+        <div class="hero-text">
+            <h1 style="font-size: 3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">About Life Connect</h1>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="stat-item">
+            <h3>7053908</h3>
+            <p>Donor Registered</p>
+        </div>
+        <div class="stat-item">
+            <h3>7684758</h3>
+            <p>Blood Units Collected</p>
+        </div>
+        <div class="stat-item">
+            <h3>3800+</h3>
+            <p>Blood Banks Connected</p>
+        </div>
+    </div>
+
+    <!-- About Us Detailed Section -->
+    <section class="about" style="flex-direction: column; padding: 60px 80px;">
+        <div class="about-text" style="padding-right: 0; margin-bottom: 40px;">
+            <h2>Our Mission</h2>
+            <p>Life Connect is dedicated to revolutionizing the blood donation ecosystem in India by connecting donors, recipients, and blood banks through an integrated digital platform. Our mission is to ensure timely access to safe blood for everyone in need while promoting voluntary blood donation as a civic responsibility.</p>
+        </div>
+
+        <div style="display: flex; margin-bottom: 60px;">
+            <div style="flex: 1; padding-right: 30px;">
+                <h3 style="color: #8b0000; margin-bottom: 20px;">Our Vision</h3>
+                <p>We envision a future where no life is lost due to blood shortage. Life Connect aims to be the backbone of India's blood transfusion services, making the process transparent, efficient, and accessible to all citizens regardless of their geographical location or socioeconomic status.</p>
+            </div>
+            <div style="flex: 1; background-image: url('assets/images/blood-donation-camp.jpg'); background-size: cover; background-position: center; min-height: 250px; border-radius: 8px;"></div>
+        </div>
+        
+        <div style="display: flex; margin-bottom: 60px; flex-direction: row-reverse;">
+            <div style="flex: 1; padding-left: 30px;">
+                <h3 style="color: #8b0000; margin-bottom: 20px;">Our Journey</h3>
+                <p>Launched as a national initiative, Life Connect has grown to become India's largest blood donation network. Starting with a handful of blood banks, we now connect over 3,800 registered blood banks across 29 states and 8 Union Territories. Our platform has facilitated millions of successful donations, saving countless lives and establishing new standards for blood banking in the country.</p>
+            </div>
+            <div style="flex: 1; background-image: url('assets/images/journey.jpg'); background-size: cover; background-position: center; min-height: 250px; border-radius: 8px;"></div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="services" style="background-color: #f9f9f9; padding: 60px 40px;">
+        <h2>What We Offer</h2>
+        <div class="service-grid" style="margin-top: 40px;">
+            <div class="service-card">
+                <div class="process-icon" style="color: #8b0000; font-size: 2.5em;">🔍</div>
+                <h3>Blood Availability Search</h3>
+                <p style="margin-top: 10px;">Real-time information on blood availability across all registered blood banks</p>
+            </div>
+            <div class="service-card">
+                <div class="process-icon" style="color: #8b0000; font-size: 2.5em;">📱</div>
+                <h3>Mobile Applications</h3>
+                <p style="margin-top: 10px;">Easy access to all services through our mobile apps available on iOS and Android</p>
+            </div>
+            <div class="service-card">
+                <div class="process-icon" style="color: #8b0000; font-size: 2.5em;">📊</div>
+                <h3>National Dashboard</h3>
+                <p style="margin-top: 10px;">Comprehensive statistics and insights on blood donation trends across India</p>
+            </div>
+            <div class="service-card">
+                <div class="process-icon" style="color: #8b0000; font-size: 2.5em;">🏥</div>
+                <h3>Blood Bank Network</h3>
+                <p style="margin-top: 10px;">Integrated platform connecting over 3,800 blood banks following national standards</p>
+            </div>
+            <div class="service-card">
+                <div class="process-icon" style="color: #8b0000; font-size: 2.5em;">🗓️</div>
+                <h3>Camp Management</h3>
+                <p style="margin-top: 10px;">End-to-end management of blood donation camps with real-time reporting</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section style="padding: 60px 40px; text-align: center;">
+        <h2 style="color: #8b0000; margin-bottom: 40px;">Our Impact</h2>
+        
+        <div style="display: flex; justify-content: space-around; max-width: 1200px; margin: 0 auto; flex-wrap: wrap;">
+            <div class="impact-card">
+                <h3 style="color: #8b0000; margin-bottom: 20px;">National Coverage</h3>
+                <div style="height: 200px; background-image: url('assets/images/india-map.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat; margin-bottom: 20px;"></div>
+                <p>Present across all 29 states and 8 Union Territories with a network of over 3,800 registered blood banks</p>
+            </div>
+            
+            <div class="impact-card">
+                <h3 style="color: #8b0000; margin-bottom: 20px;">Lives Saved</h3>
+                <div style="display: flex; justify-content: center; align-items: center; height: 200px;">
+                    <div style="font-size: 3.5em; font-weight: bold; color: #8b0000;">7.6M+</div>
+                </div>
+                <p>Blood units collected through our platform, potentially saving over 22 million lives</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section style="padding: 60px 40px; background-color: #ffebeb;">
+        <h2 style="color: #8b0000; text-align: center; margin-bottom: 40px;">What People Say</h2>
+        
+        <div style="display: flex; justify-content: space-around; max-width: 1200px; margin: 0 auto; flex-wrap: wrap;">
+            <div class="testimonial-card">
+                <div style="color: #8b0000; font-size: 2em; margin-bottom: 15px;">❝</div>
+                <p style="font-style: italic; margin-bottom: 20px;">Life Connect helped me find a rare blood type for my daughter's emergency surgery. The platform found a donor within hours when hospitals couldn't help.</p>
+                <div style="display: flex; align-items: center;">
+                    <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #ddd; margin-right: 15px;"></div>
+                    <div>
+                        <h4>Priya Sharma</h4>
+                        <p style="font-size: 0.9em; color: #666;">Delhi</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div style="color: #8b0000; font-size: 2em; margin-bottom: 15px;">❝</div>
+                <p style="font-style: italic; margin-bottom: 20px;">As a regular blood donor, Life Connect has made it incredibly convenient to track my donations and find nearby camps. The reminders about eligibility dates are super helpful.</p>
+                <div style="display: flex; align-items: center;">
+                    <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #ddd; margin-right: 15px;"></div>
+                    <div>
+                        <h4>Rajesh Patel</h4>
+                        <p style="font-size: 0.9em; color: #666;">Mumbai</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div style="color: #8b0000; font-size: 2em; margin-bottom: 15px;">❝</div>
+                <p style="font-style: italic; margin-bottom: 20px;">Our hospital has significantly improved blood inventory management since joining Life Connect. The real-time updates and automated alerts have streamlined our operations.</p>
+                <div style="display: flex; align-items: center;">
+                    <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #ddd; margin-right: 15px;"></div>
+                    <div>
+                        <h4>Dr. Anand Krishnan</h4>
+                        <p style="font-size: 0.9em; color: #666;">Blood Bank Director, Chennai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section style="padding: 60px 40px; text-align: center;">
+        <h2 style="color: #8b0000; margin-bottom: 40px;">Our Leadership Team</h2>
+        
+        <div style="display: flex; justify-content: space-around; max-width: 1200px; margin: 0 auto; flex-wrap: wrap;">
+            <div class="team-member">
+                <div class="team-photo"></div>
+                <h3 style="margin-bottom: 5px;">Dr. Vijay Raghavan</h3>
+                <p style="color: #8b0000; margin-bottom: 15px;">Chief Executive Officer</p>
+                <p style="font-size: 0.9em;">With over 25 years of experience in healthcare management and policy implementation</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="team-photo"></div>
+                <h3 style="margin-bottom: 5px;">Meera Desai</h3>
+                <p style="color: #8b0000; margin-bottom: 15px;">Chief Operations Officer</p>
+                <p style="font-size: 0.9em;">Former head of National Blood Transfusion Council with expertise in blood banking systems</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="team-photo"></div>
+                <h3 style="margin-bottom: 5px;">Arjun Mehta</h3>
+                <p style="color: #8b0000; margin-bottom: 15px;">Chief Technology Officer</p>
+                <p style="font-size: 0.9em;">Technology innovator with extensive experience in healthcare information systems</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="team-photo"></div>
+                <h3 style="margin-bottom: 5px;">Dr. Lakshmi Iyer</h3>
+                <p style="color: #8b0000; margin-bottom: 15px;">Medical Director</p>
+                <p style="font-size: 0.9em;">Hematologist with research focus on blood disorders and transfusion medicine</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section style="padding: 60px 40px; background-color: #f9f9f9; text-align: center;">
+        <h2 style="color: #8b0000; margin-bottom: 40px;">Our Partners</h2>
+        
+        <div style="display: flex; justify-content: space-around; align-items: center; max-width: 1200px; margin: 0 auto; flex-wrap: wrap;">
+            <div class="partner-logo">
+                <div style="color: #666; font-weight: bold;">Ministry of Health</div>
+            </div>
+            <div class="partner-logo">
+                <div style="color: #666; font-weight: bold;">Indian Red Cross</div>
+            </div>
+            <div class="partner-logo">
+                <div style="color: #666; font-weight: bold;">WHO India</div>
+            </div>
+            <div class="partner-logo">
+                <div style="color: #666; font-weight: bold;">AIIMS</div>
+            </div>
+            <div class="partner-logo">
+                <div style="color: #666; font-weight: bold;">National Health Mission</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us CTA -->
+    <section style="padding: 60px 40px; text-align: center; background-color: #8b0000; color: white;">
+        <h2 style="margin-bottom: 30px;">Get In Touch</h2>
+        <p style="max-width: 700px; margin: 0 auto 30px auto; font-size: 1.1em;">Have questions or want to learn more about Life Connect? Our team is here to help you.</p>
+        <a href="#" class="read-more-btn" style="background-color: white; color: #8b0000;">Contact Us</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Looking for Blood</h3>
+                <ul>
+                    <li><a href="#">Blood Availability</a></li>
+                    <li><a href="#">Blood Bank Directory</a></li>
+                    <li><a href="#">Thalassemia Request</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Web Information Manager</h3>
+                <ul>
+                    <li><a href="#">Blood Donation Camp</a></li>
+                    <li><a href="#">Donor Login</a></li>
+                    <li><a href="#">About Blood Donation</a></li>
+                    <li><a href="#">Register VBD Camp</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Blood Bank Login</h3>
+                <ul>
+                    <li><a href="#">Life Connect Login</a></li>
+                    <li><a href="#">Add your Blood Bank</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">About Life Connect</a></li>
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="#">Life Connect FAQs</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Video Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Download Life Connect App</h3>
+                <div class="app-download">
+                    <img src="https://via.placeholder.com/120x40" alt="App Store">
+                    <img src="https://via.placeholder.com/120x40" alt="Google Play">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects and animations for the About page
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                    this.style.boxShadow = '0 15px 30px rgba(139, 0, 0, 0.2)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 3px 10px rgba(0, 0, 0, 0.1)';
+                });
+            });
+
+            // Add hover effects for app download images
+            const appImages = document.querySelectorAll('.app-download img');
+            appImages.forEach(img => {
+                img.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05)';
+                    this.style.transition = 'all 0.3s ease';
+                });
+                
+                img.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+
+            // Add pulse effect to main logo on hover
+            const logo = document.querySelector('.logo');
+            if (logo) {
+                logo.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05)';
+                    this.style.transition = 'all 0.3s ease';
+                });
+                
+                logo.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
