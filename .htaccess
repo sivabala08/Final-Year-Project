@@ -1,0 +1,20 @@
+# Enable the rewrite engine
+RewriteEngine On
+
+# API endpoints
+RewriteRule ^api/send-otp$ api/send-otp.php [L]
+RewriteRule ^api/verify-otp$ api/verify-otp.php [L]
+RewriteRule ^api/complete-profile$ api/complete-profile.php [L]
+
+# Placeholder image for development
+RewriteRule ^api/placeholder/([0-9]+)/([0-9]+)$ https://via.placeholder.com/$1x$2 [L,R=302]
+
+# Deny access to config file
+<Files "config.php">
+  Order allow,deny
+  Deny from all
+</Files>
+
+# PHP error settings - comment out in production
+php_flag display_errors on
+php_value error_reporting E_ALL
